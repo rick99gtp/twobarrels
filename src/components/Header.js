@@ -11,7 +11,7 @@ const Header = (props) => {
     return (
         <div className='header' style={{ backgroundImage: `url(${background})`}}>
             <Logo />
-            {props.menuOpen ? <Menu activePage={props.activePage}/> : null}
+            <Menu menuOpen={props.menuOpen} activePage={props.activePage}/>
             <MobileMenuTrigger onchange={() => props.changeMenuOpen()} />
 
             <ExitMobile menuOpen={props.menuOpen} changeMenuOpen={() => props.changeMenuOpen()}/>

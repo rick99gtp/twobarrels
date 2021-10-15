@@ -9,6 +9,7 @@
     width: 275px;
     z-index: 101;
     background: var(--blue);
+    color: #fff;
 }
 
 .show-mobile-nav {
@@ -30,14 +31,11 @@
     cursor: pointer;
     padding: 7.5px 0 7.5px 22.5px;
     transition: .25s ease;
+    border-bottom: 1px solid #dedede;
 }
 
 .menu nav ul li span {
     padding-left: 24px;
-}
-
-.menu nav ul li a {
-    display: block;
 }
 
 .nav-bg {
