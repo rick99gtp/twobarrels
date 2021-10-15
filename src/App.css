@@ -1,3 +1,8 @@
 :root {
-  
+  --orange: #f26823;
+  --blue: #05121a;
+}
+
+.App {
+  display: flex;
 }
