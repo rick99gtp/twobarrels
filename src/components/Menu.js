@@ -6,7 +6,7 @@ import { GiBeerStein } from 'react-icons/gi';
 const Menu = (props) => {
 
     return (
-        <div className='menu'>
+        <div className={`menu `}>
             <nav className='nav'>
                 <ul>
                     <li className={props.activePage===0 ? 'nav-bg' : null}><IoHome style={{fontSize: '20px', top: '3px', position: 'relative'}}/><span>Overview</span></li>

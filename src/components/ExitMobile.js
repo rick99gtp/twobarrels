@@ -2,9 +2,9 @@ import React from 'react'
 import { ImPlus } from 'react-icons/im';
 import './ExitMobile.css';
 
-function ExitMobile(props) {
+const ExitMobile = props => {
     return (
-        <div onClick={() => props.changemenuopen()} className={`exit-mobile ${props.menuopen ? 'show-exit-mobile' : ''}`}>
+        <div onClick={() => props.changeMenuOpen()} className={`exit-mobile ${props.menuOpen ? 'show-exit-mobile' : ''}`}>
             <ImPlus />
         </div>
     )

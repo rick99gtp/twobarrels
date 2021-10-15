@@ -7,6 +7,11 @@ import { BrowserRouter as Router } from 'react-router-dom';
 function App() {
 
   const [activePage, setActivePage] = useState(0);
+  const [menuOpen, setMenuOpen] = useState(false);
+
+  const changeMenuOpen = () => {
+      setMenuOpen(!menuOpen);
+  };
 
   const changeActivePage = (page) => {
     setActivePage(page);
@@ -16,7 +21,7 @@ function App() {
 
     <div className="App">
       <Router>
-        <Header activePage={activePage} />
+        <Header menuOpen={menuOpen} activePage={activePage} changeMenuOpen={changeMenuOpen}/>
         <Main activePage={activePage} changeActivePage={changeActivePage} />
       </Router>
     </div>

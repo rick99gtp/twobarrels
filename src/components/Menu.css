@@ -1,5 +1,18 @@
 .menu {
-    color: white;
+    position: fixed;
+    height: 100%;
+    top: 0;
+    left: -275px;
+    transition: all .5s;
+    padding: 0 0 1em 0;
+    border-right: 1px solid #ccc;
+    width: 275px;
+    z-index: 101;
+    background: var(--blue);
+}
+
+.show-mobile-nav {
+    left: 0;
 }
 
 .menu nav ul {
