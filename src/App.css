@@ -1,6 +1,13 @@
 :root {
   --orange: #f26823;
   --blue: #05121a;
+  --menu-hover: #003454;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 .App {

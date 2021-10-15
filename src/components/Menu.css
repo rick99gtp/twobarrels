@@ -1,3 +1,36 @@
 .menu {
-    
+    color: white;
+}
+
+.menu nav ul {
+    list-style-type: none;
+    text-transform: uppercase;
+    font-family: 'Raleway', sans-serif;
+    font-size: 15px;
+    letter-spacing: 1px;
+    line-height: 28px;
+    list-style-position: outside;
+    margin-bottom: 19px;
+}
+
+.menu nav ul li {
+    cursor: pointer;
+    padding: 7.5px 0 7.5px 22.5px;
+}
+
+.menu nav ul li span {
+    padding-left: 24px;
+}
+
+.menu nav ul li a {
+    display: block;
+}
+
+.nav-bg {
+    background-color: var(--menu-hover);
+    color: var(--orange);
+}
+
+.menu nav ul li:hover {
+    background-color: var(--menu-hover);
 }

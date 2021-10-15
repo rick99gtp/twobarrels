@@ -1,6 +1,12 @@
 import './Overview.css';
+import { useEffect } from 'react';
 
-const Overview= () => {
+const Overview= (props) => {
+
+    useEffect(() => {
+        props.changeActivePage(0);
+    },[]);
+
     return (
         <div className='overview'>
             Overview page

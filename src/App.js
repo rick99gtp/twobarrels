@@ -7,11 +7,15 @@ function App() {
 
   const [activePage, setActivePage] = useState(0);
 
+  const changeActivePage = (page) => {
+    setActivePage(page);
+  };
+
   return (
     
     <div className="App">
-      <Header />
-      <Main activepage={activePage}/>
+      <Header activePage={activePage}/>
+      <Main activePage={activePage} changeActivePage={changeActivePage}/>
     </div>
   );
 }

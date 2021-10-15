@@ -2,11 +2,11 @@ import './Header.css';
 import Logo from './Logo';
 import Menu from './Menu';
 
-const Header = () => {
+const Header = (props) => {
     return (
         <div className='header'>
             <Logo />
-            <Menu />
+            <Menu activePage={props.activePage}/>
         </div>
     )
 }
