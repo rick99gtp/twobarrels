@@ -5,4 +5,5 @@
     background-position: -100px bottom;
     z-index: 30;
     overflow: auto;
+    position: relative;
 }

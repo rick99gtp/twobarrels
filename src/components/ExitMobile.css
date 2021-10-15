@@ -1,0 +1,15 @@
+.exit-mobile {
+    position: fixed;
+    top: 5px;
+    right: -40px;
+    color: #fff;
+    font-size: 32px;
+    z-index: 101;
+    transition: all .5s;
+    transform: rotate(45deg);
+}
+
+.show-exit-mobile {
+    transform: rotate(405deg);
+    right: 10px;
+}
