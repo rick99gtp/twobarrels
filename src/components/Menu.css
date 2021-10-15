@@ -16,6 +16,7 @@
 .menu nav ul li {
     cursor: pointer;
     padding: 7.5px 0 7.5px 22.5px;
+    transition: .25s ease;
 }
 
 .menu nav ul li span {

@@ -1,3 +1,9 @@
 .logo {
-    margin: 1em 0;
+    cursor: pointer;
+    text-align: center;
+    line-height: 25.5px;
+}
+
+.logo svg {
+    width: 190px;
 }

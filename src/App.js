@@ -2,6 +2,7 @@ import './App.css';
 import Header from './components/Header';
 import Main from './components/Main';
 import { useState } from 'react';
+import { BrowserRouter as Router } from 'react-router-dom';
 
 function App() {
 
@@ -12,10 +13,12 @@ function App() {
   };
 
   return (
-    
+
     <div className="App">
-      <Header activePage={activePage}/>
-      <Main activePage={activePage} changeActivePage={changeActivePage}/>
+      <Router>
+        <Header activePage={activePage} />
+        <Main activePage={activePage} changeActivePage={changeActivePage} />
+      </Router>
     </div>
   );
 }
