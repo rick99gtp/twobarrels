@@ -1,0 +1,32 @@
+.icon {
+    background: #fff;
+    padding: 1em 2em;
+    margin-bottom: 1em;
+    transition: boxShadow .5s ease 0s;
+    cursor: pointer;
+    text-align: left;
+    text-decoration: none;
+}
+
+.icon__p {
+    font-size: 17px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    color: var(--gray);
+    margin-bottom: 1rem;
+    line-height: 1.6;
+    text-rendering: optimizeLegibility;
+}
+
+.icon__h4 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    margin-top: 1em;
+    margin-bottom: 10px;
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: var(--turquoise);
+    line-height: 1.4;
+    font-style: normal;
+}

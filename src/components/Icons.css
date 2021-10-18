@@ -1,0 +1,12 @@
+.icons {
+    margin: 0 auto;
+    padding: 0 1em;
+}
+
+.icons h2 {
+    display: block;
+    flex: 0 0 100%;
+    margin-bottom: 1em;
+    font-size: 1.45rem;
+    margin-top: 2rem;
+}

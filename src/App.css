@@ -3,6 +3,9 @@
   --blue: #05121a;
   --menu-hover: #003454;
   --dark-gray: #f0f0f0;
+  --gray: #363636;
+  --turquoise: #035;
+  --light-gray: #f0f0f0;
 }
 
 * {
@@ -16,9 +19,10 @@ html {
 }
 
 body {
-  background: #fff;
+  background-color: var(--light-gray)
 }
 
-.App {
-  
+.row { 
+  padding: 0 1em;
+  max-width: 1000px;
 }

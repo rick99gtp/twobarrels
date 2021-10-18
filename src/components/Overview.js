@@ -1,6 +1,10 @@
 import './Overview.css';
 import { useEffect } from 'react';
-import background from '../assets/2B-building-v5.jpg';
+import Hero from './Hero';
+import NewSection from './NewSection';
+import Icons from './Icons';
+import OverviewBottom from './OverviewBottom';
+import OverviewAwesome from './OverviewAwesome';
 
 const Overview = (props) => {
 
@@ -10,15 +14,12 @@ const Overview = (props) => {
 
     return (
         <div className='overview'>
-            <section>
-                <div className='overview__hero'  style={{ backgroundImage: `url(${background})` }}>
-                    <h1>We Give'Em Two Barrels - Every Day</h1>
-                    <hr />
-                    <span className='overview__hero-bottom'>
-                        Proudly located in Spokane, WA & Austin, TX
-                    </span>
-                </div>
-            </section>
+            <Hero />
+            <NewSection>
+                <Icons />
+                <OverviewBottom />
+            </NewSection>
+            <OverviewAwesome />
         </div>
     )
 }
