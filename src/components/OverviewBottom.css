@@ -20,9 +20,6 @@
     font-family: 'Lato', sans-serif;
     font-weight: 300;
     color: var(--gray);
-    margin-bottom: 1rem;
-    line-height: 1.6;
-    text-rendering: optimizeLegibility;
 }
 
 .overview-bottom p a {

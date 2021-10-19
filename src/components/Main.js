@@ -5,6 +5,7 @@ import Jobs from './Jobs';
 import ContactUs from './ContactUs';
 import Blog from './Blog';
 import { Switch, Route } from 'react-router-dom';
+import Footer from './Footer';
 
 const Main = (props) => {
     return (
@@ -24,6 +25,7 @@ const Main = (props) => {
                 </Route>
                 <Route path='/'>
                     <Overview changeActivePage={props.changeActivePage} />
+                    <Footer />
                 </Route>
                 {/* {props.activepage === 0 ? <Overview /> : null}
                     {props.activepage === 1 ? <WhoWeAre /> : null}

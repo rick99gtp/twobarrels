@@ -5,6 +5,7 @@ import NewSection from './NewSection';
 import Icons from './Icons';
 import OverviewBottom from './OverviewBottom';
 import OverviewAwesome from './OverviewAwesome';
+import WantToWorkHere from './WantToWorkHere';
 
 const Overview = (props) => {
 
@@ -20,6 +21,7 @@ const Overview = (props) => {
                 <OverviewBottom />
             </NewSection>
             <OverviewAwesome />
+            <WantToWorkHere />
         </div>
     )
 }
