@@ -1,5 +1,4 @@
 import './Overview.css';
-import { useEffect } from 'react';
 import Hero from './Hero';
 import NewSection from './NewSection';
 import Icons from './Icons';
@@ -8,10 +7,6 @@ import OverviewAwesome from './OverviewAwesome';
 import WantToWorkHere from './WantToWorkHere';
 
 const Overview = (props) => {
-
-    useEffect(() => {
-        props.changeActivePage(0);
-    }, []);
 
     return (
         <div className='overview'>

@@ -44,6 +44,7 @@
 
 .footer__container--socials ul li {
     text-align: center;
+    margin-bottom: 14px;
 }
 
 .footer__container--socials ul li a {

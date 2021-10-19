@@ -25,7 +25,6 @@ const Main = (props) => {
                 </Route>
                 <Route path='/'>
                     <Overview changeActivePage={props.changeActivePage} />
-                    <Footer />
                 </Route>
                 {/* {props.activepage === 0 ? <Overview /> : null}
                     {props.activepage === 1 ? <WhoWeAre /> : null}
@@ -33,6 +32,7 @@ const Main = (props) => {
                     {props.activepage === 3 ? <ContactUs /> : null}
                     {props.activepage === 4 ? <Blog /> : null} */}
             </Switch>
+            <Footer />
         </div>
     )
 }

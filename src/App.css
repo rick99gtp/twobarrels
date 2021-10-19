@@ -19,10 +19,10 @@ html {
 }
 
 body {
-  /* background-color: var(--light-gray); */
   font-size: 17px;
   font-family: 'Lato', sans-serif;
   color: var(--gray);
+  line-height: 1.5;
 }
 
 .row { 
@@ -48,5 +48,4 @@ ul li {
   font-family: 'Lato', sans-serif;
   font-weight: 300;
   color: var(--gray);
-  margin-bottom: 14px;
 }

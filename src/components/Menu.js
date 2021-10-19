@@ -2,18 +2,27 @@ import './Menu.css';
 import { IoHome, IoPersonSharp, IoBriefcase } from 'react-icons/io5';
 import { ImPhone } from 'react-icons/im';
 import { GiBeerStein } from 'react-icons/gi';
+import { Link } from 'react-router-dom';
+import { useState } from 'react';
 
 const Menu = (props) => {
+
+    const [activeMenu,setActiveMenu] = useState(0);
+
+    const hideMenu = (page) => {
+        props.changeMenuOpen();
+        setActiveMenu(page);
+    };
 
     return (
         <div className={`menu ${props.menuOpen ? 'show-mobile-nav' : ''}`}>
             <nav className='nav'>
                 <ul>
-                    <li className={props.activePage===0 ? 'nav-bg' : null}><IoHome style={{fontSize: '21px', top: '3px', position: 'relative'}}/><span>Overview</span></li>
-                    <li className={props.activePage===1 ? 'nav-bg' : null}><IoPersonSharp style={{fontSize: '21px', top: '3px', position: 'relative'}}/><span>Who We Are</span></li>
-                    <li className={props.activePage===2 ? 'nav-bg' : null}><IoBriefcase style={{fontSize: '21px', top: '3px', position: 'relative'}}/><span>Jobs</span></li>
-                    <li className={props.activePage===3 ? 'nav-bg' : null}><ImPhone style={{fontSize: '21px', top: '3px', position: 'relative'}}/><span>Contact Us</span></li>
-                    <li className={props.activePage===4 ? 'nav-bg' : null}><GiBeerStein style={{fontSize: '21px', top: '3px', position: 'relative'}}/><span>Blog</span></li>
+                    <li className={activeMenu === 0 ? 'nav-bg' : null}><Link to="/" onClick={() => hideMenu(0)}><IoHome style={{fontSize: '21px', top: '3px', position: 'relative'}}/><span>Overview</span></Link></li>
+                    <li className={activeMenu === 1 ? 'nav-bg' : null}><Link to="/whoweare" onClick={() => hideMenu(1)}><IoPersonSharp style={{fontSize: '21px', top: '3px', position: 'relative'}}/><span>Who We Are</span></Link></li>
+                    <li className={activeMenu === 2 ? 'nav-bg' : null}><Link to="/jobs" onClick={() => hideMenu(2)}><IoBriefcase style={{fontSize: '21px', top: '3px', position: 'relative'}}/><span>Jobs</span></Link></li>
+                    <li className={activeMenu === 3 ? 'nav-bg' : null}><Link to="/contactus" onClick={() => hideMenu(3)}><ImPhone style={{fontSize: '21px', top: '3px', position: 'relative'}}/><span>Contact Us</span></Link></li>
+                    <li className={activeMenu === 4 ? 'nav-bg' : null}><Link to="/blog" onClick={() => hideMenu(4)}><GiBeerStein style={{fontSize: '21px', top: '3px', position: 'relative'}}/><span>Blog</span></Link></li>
                 </ul>
             </nav>
         </div>
