@@ -1,7 +1,6 @@
 .whoweare__container {
     background: var(--light-gray);
-    margin: 4em auto 1em;
-    padding: 0 1em;
+    padding: 4em 1em 1em 1em;
 }
 
 .whoweare__container--staff {
