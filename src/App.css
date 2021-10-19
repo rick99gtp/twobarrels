@@ -49,3 +49,7 @@ ul li {
   font-weight: 300;
   color: var(--gray);
 }
+
+.App {
+  background: var(--light-gray);
+}
