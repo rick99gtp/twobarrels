@@ -38,11 +38,14 @@
     padding-left: 24px;
 }
 
-.nav-bg {
-    background-color: var(--menu-hover);
-    color: var(--orange);
-}
-
 .menu nav ul li:hover {
     background-color: var(--menu-hover);
+}
+
+.menu nav ul li a {
+    color: #fff;
+}
+
+.nav-bg {
+    color: var(--orange);
 }
