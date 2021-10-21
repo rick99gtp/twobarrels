@@ -5,6 +5,7 @@ import { useState, useEffect, Children } from 'react';
 const PositionsLower = props => {
     const [ulVisible, setUlVisible] = useState(false);
     const [ulHeight, setUlHeight] = useState(null);
+    const [activeIcon, setActiveIcon] = useState('plus');
 
     const calculateHeight = () => {
         const count = Children.count(props.children);
@@ -22,9 +23,13 @@ const PositionsLower = props => {
             setUlHeight({
                 height: '0px'
             });
+
+            // change icon to plus
+            setActiveIcon('plus');
         }
         else {
             setUlHeight(calculateHeight());
+            setActiveIcon('minus');
         }
     }, [ulVisible]);
 
@@ -35,7 +40,7 @@ const PositionsLower = props => {
     return (
         <div className='position__container'>
             <div className='position-item' onClick={changeUlVisible}>
-                <h4>{props.title}</h4><FontAwesomeIcon icon='plus' className='fa-position' />
+                <h4>{props.title}</h4><FontAwesomeIcon icon={activeIcon} className='fa-position' />
             </div>
             <ul className={`career-ul ${ulVisible ? 'show-ul' : ''}`} style={ulHeight}>
                 {props.children}
