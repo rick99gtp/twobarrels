@@ -2,7 +2,7 @@ import './JobPost.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { Link } from 'react-router-dom';
 
-function JobPost(props) {
+const JobPost = props => {
     return (
         <div className='job-post__container'>
             <FontAwesomeIcon
