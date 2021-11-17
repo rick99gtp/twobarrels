@@ -9,6 +9,7 @@ const PositionsLower = props => {
 
     const calculateHeight = () => {
         const count = Children.count(props.children);
+
         return {
             height: `${count * 55}px`
         }
@@ -24,7 +25,6 @@ const PositionsLower = props => {
                 height: '0px'
             });
 
-            // change icon to plus
             setActiveIcon('plus');
         }
         else {

@@ -8,6 +8,7 @@
     background-size: 100px;
     padding-top: 1em;
     padding-bottom: 1em;
+    color: var(--gray);
 }
 
 .footer__container p {
@@ -20,8 +21,14 @@
     font-family: 'Lato', sans-serif;
 }
 
-.footer__container--footer-text {
+.footer-text {
     margin: 1em 0 2em 0;
+}
+
+.footer__container p.office-name {
+    text-transform: uppercase;
+    color: var(--orange);
+    font-weight: 700;
 }
 
 .footer__container--footer-text a {
@@ -55,4 +62,8 @@
     color: var(--orange);
     line-height: 29px;
     font-weight: 700;
+}
+
+address:last-child {
+    margin-top: 30px;
 }
