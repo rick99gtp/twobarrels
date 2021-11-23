@@ -1,7 +1,4 @@
 import './Menu.css';
-// import { IoHome, IoPersonSharp, IoBriefcase } from 'react-icons/io5';
-// import { ImPhone } from 'react-icons/im';
-// import { GiBeerStein } from 'react-icons/gi';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { Link } from 'react-router-dom';
 import { useState } from 'react';

@@ -19,3 +19,30 @@
     font-family: 'Raleway', sans-serif;
     line-height: 1.4;
 }
+.blog__container h2 {
+    line-height: 1;
+    margin-bottom: 10px;
+    font-size: 1.45rem;
+    margin-top: 2rem;
+    font-weight: 900;
+    font-family: 'Raleway', sans-serif;
+}
+
+a {
+    color: var(--gray);
+}
+
+.blog__container .post-details {
+    font-size: .875rem;
+    margin-bottom: 1rem;
+}
+
+.blog__container .post-details span {
+    color: #999;
+}
+
+article {
+    border-bottom: 1px dotted #999;
+    margin-bottom: 2rem;
+    padding-bottom: 2rem;
+}
