@@ -7,6 +7,19 @@
     text-align: left;
     text-decoration: none;
     box-shadow: inset 0 4px 0 -1px #035;
+    transition: all .4s ease-in-out;
+}
+
+.icon a {
+    color: var(--turquoise);
+}
+
+.icon:hover {
+    box-shadow: inset 0 400px 0 -1px #035, 0 7px 12px rgb(0 0 0 / 20%);
+}
+
+.icon:hover .icon-hover-style {
+    color: #fff;
 }
 
 .icon__p {
@@ -17,6 +30,10 @@
     margin-bottom: 1rem;
     line-height: 1.6;
     text-rendering: optimizeLegibility;
+}
+
+.icon:hover .icon__p, .icon:hover .icon__h4 {
+    color: #fff;
 }
 
 .icon__h4 {
