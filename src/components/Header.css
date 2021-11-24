@@ -7,3 +7,16 @@
     overflow: auto;
     position: relative;
 }
+
+@media print, screen and (min-width: 47.5em) {
+    .header {
+        background-size: 660px;
+        background-position: -200px bottom;
+        width: 260px;
+        position: fixed;
+        overflow: visible;
+        box-shadow: 2px 0 10px rgb(0 0 0 / 50%);
+        height: 100%;
+        border-bottom: none;
+    }
+}

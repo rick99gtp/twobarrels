@@ -24,7 +24,7 @@ const Main = (props) => {
                     <Blog />
                 </Route>
                 <Route path='/'>
-                    <Overview changeActivePage={props.changeActivePage} />
+                    <Overview changeActivePage={props.changeActivePage} appWidth={props.appWidth}/>
                 </Route>
                 {/* {props.activepage === 0 ? <Overview /> : null}
                     {props.activepage === 1 ? <WhoWeAre /> : null}

@@ -41,3 +41,9 @@
     font-family: 'Lato', sans-serif;
     line-height: 1.5;
 }
+
+@media print, screen and (min-width: 47.5em) {
+    .overview__hero {
+        padding-left: 260px;
+    }
+}

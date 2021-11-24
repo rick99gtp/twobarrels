@@ -2,7 +2,7 @@ import './Icons.css';
 import Icon from './Icon';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
-const Icons = () => {
+const Icons = (props) => {
 
     const iconStyle = {
         fontSize: '36px',
@@ -13,7 +13,7 @@ const Icons = () => {
     };
 
     return (
-        <div className='icons'>
+        <div className={`icons ${props.appWidth >= 768 ? 'icon-flex' : ''}`}>
             <h2></h2>
             <Icon
                 icon={<FontAwesomeIcon icon="cog" style={iconStyle} className='icon-hover-style'/>}

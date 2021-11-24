@@ -8,11 +8,13 @@ import ExitMobile from './ExitMobile';
 
 const Header = (props) => {
 
+    console.log(props.componentWidth);
+
     return (
         <div className='header' style={{ backgroundImage: `url(${background})`}}>
             <Logo />
             <Menu menuOpen={props.menuOpen} activePage={props.activePage} changeMenuOpen={props.changeMenuOpen}/>
-            <MobileMenuTrigger onchange={() => props.changeMenuOpen()} />
+            {props.appWidth < 768 ? <MobileMenuTrigger onchange={() => props.changeMenuOpen()} /> : null}
 
             <ExitMobile menuOpen={props.menuOpen} changeMenuOpen={() => props.changeMenuOpen()}/>
             {props.menuOpen ? <BodyOverlay changeMenuOpen={() => props.changeMenuOpen()}/> : null}

@@ -2,3 +2,9 @@
     padding: 4.5em 1em;
     background: var(--light-gray);
 }
+
+@media print, screen and (min-width: 47.5em) {
+    .new-section {
+        padding-left: 260px;
+    }
+}

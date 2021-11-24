@@ -12,7 +12,7 @@ const Overview = (props) => {
         <div className='overview'>
             <Hero />
             <NewSection>
-                <Icons />
+                <Icons appWidth={props.appWidth}/>
                 <OverviewBottom />
             </NewSection>
             <OverviewAwesome />

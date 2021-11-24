@@ -1,5 +1,5 @@
 import './Logo.css';
-import { Link, Switch } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 const Logo = () => {
     return (
