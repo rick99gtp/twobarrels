@@ -1,50 +1,50 @@
 .icon {
-    background: #fff;
-    padding: 1em 2em;
-    margin-bottom: 1em;
-    transition: boxShadow .5s ease 0s;
-    cursor: pointer;
-    text-align: left;
-    text-decoration: none;
-    box-shadow: inset 0 4px 0 -1px #035;
-    transition: all .4s ease-in-out;
+	background: #fff;
+	padding: 1em 2em;
+	transition: boxShadow 0.5s ease 0s;
+	cursor: pointer;
+	text-align: left;
+	text-decoration: none;
+	box-shadow: inset 0 4px 0 -1px #035;
+	transition: all 0.4s ease-in-out;
 }
 
 .icon a {
-    color: var(--turquoise);
+	color: var(--turquoise);
 }
 
 .icon:hover {
-    box-shadow: inset 0 400px 0 -1px #035, 0 7px 12px rgb(0 0 0 / 20%);
+	box-shadow: inset 0 400px 0 -1px #035, 0 7px 12px rgb(0 0 0 / 20%);
 }
 
 .icon:hover .icon-hover-style {
-    color: #fff;
+	color: #fff;
 }
 
 .icon__p {
-    font-size: 17px;
-    font-family: 'Lato', sans-serif;
-    font-weight: 300;
-    color: var(--gray);
-    margin-bottom: 1rem;
-    line-height: 1.6;
-    text-rendering: optimizeLegibility;
+	font-size: 19px;
+	font-family: "Lato", sans-serif;
+	font-weight: 300;
+	color: var(--gray);
+	margin-bottom: 1rem;
+	line-height: 1.6;
+	text-rendering: optimizeLegibility;
 }
 
-.icon:hover .icon__p, .icon:hover .icon__h4 {
-    color: #fff;
+.icon:hover .icon__p,
+.icon:hover .icon__h4 {
+	color: #fff;
 }
 
 .icon__h4 {
-    font-family: 'Raleway', sans-serif;
-    font-weight: 700;
-    margin-top: 1em;
-    margin-bottom: 10px;
-    font-size: 20px;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    color: var(--turquoise);
-    line-height: 1.4;
-    font-style: normal;
+	font-family: "Raleway", sans-serif;
+	font-weight: 700;
+	margin-top: 1em;
+	margin-bottom: 10px;
+	font-size: 20px;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	color: var(--turquoise);
+	line-height: 1.4;
+	font-style: normal;
 }

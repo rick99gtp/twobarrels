@@ -1,34 +1,57 @@
-import './Icons.css';
-import Icon from './Icon';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import "./Icons.css";
+import Icon from "./Icon";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const Icons = (props) => {
+	const iconStyle = {
+		fontSize: "36px",
+		overflow: "hidden",
+		transition: "all .25s",
+		marginTop: "30px",
+		textDecoration: "none",
+	};
 
-    const iconStyle = {
-        fontSize: '36px',
-        overflow: 'hidden',
-        transition: 'all .25s',
-        marginTop: '30px',
-        textDecoration: "none"
-    };
+	const tiles = [
+		{
+			IconName: "cog",
+			IconTitle: "Systems",
+			IconDescription:
+				"Are You Passionate About Turning Things Off And On Again? Are You Naturally Tech-Savvy? Let's Talk!",
+		},
+		{
+			IconName: "code",
+			IconTitle: "Software",
+			IconDescription:
+				"Got Code? Is It Logical And Clean? Do You Feel Passionate About Tabs Or Spaces? If So, We Want Your Skills!",
+		},
+		{
+			IconName: "pencil-alt",
+			IconTitle: "Creative",
+			IconDescription:
+				"Are You Smart? A Little Competitve? Do You Care About Sentences And The Way A Page Looks? Talk To Us!",
+		},
+	];
 
-    return (
-        <div className={`icons ${props.appWidth >= 768 ? 'icon-flex' : ''}`}>
-            <h2></h2>
-            <Icon
-                icon={<FontAwesomeIcon icon="cog" style={iconStyle} className='icon-hover-style'/>}
-                h4="Systems"
-                p="Are You Passionate About Turning Things Off And On Again? Are You Naturally Tech-Savvy? Let's Talk!" />
-            <Icon
-                icon={<FontAwesomeIcon icon="code" style={iconStyle} className='icon-hover-style' />}
-                h4="Software"
-                p="Got Code? Is It Logical And Clean? Do You Feel Passionate About Tabs Or Spaces? If So, We Want Your Skills!" />
-            <Icon
-                icon={<FontAwesomeIcon icon="pencil-alt" style={iconStyle} className='icon-hover-style' />}
-                h4="Creative"
-                p="Are You Smart? A Little Competitve? Do You Care About Sentences And The Way A Page Looks? Talk To Us!" />
-        </div>
-    )
-}
+	return (
+		<div className={`icons ${props.appWidth >= 768 ? "icon-flex" : ""}`}>
+			{tiles.map((tile, index) => {
+				return (
+					<Icon
+						icon={
+							<FontAwesomeIcon
+								icon={tile.IconName}
+								style={iconStyle}
+								className={"icon-hover-style"}
+							/>
+						}
+						h4={tile.IconTitle}
+						p={tile.IconDescription}
+						middleTile={index === 1}
+					/>
+				);
+			})}
+		</div>
+	);
+};
 
 export default Icons;

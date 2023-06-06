@@ -1,27 +1,36 @@
 .overview-bottom {
-    margin-top: 2em;
-    margin-right: auto;
-    margin-left: auto;
-    line-height: 1.5;
+	margin-top: 2em;
+	margin-right: auto;
+	margin-left: auto;
+	line-height: 1.5;
 }
 
 .overview-bottom h2 {
-    text-align: center;
-    font-size: 1.45rem;
-    margin-top: 2rem;
-    font-weight: 900;
-    line-height: 1.4;
-    margin-bottom: .5rem;
-    font-family: 'Raleway', sans-serif;
+	text-align: center;
+	font-size: 2.5rem;
+	margin-top: 2rem;
+	font-weight: 900;
+	line-height: 1.4;
+	margin-bottom: 0.5rem;
+	font-family: "Raleway", sans-serif;
 }
 
 .overview-bottom > p {
-    font-size: 17px;
-    font-family: 'Lato', sans-serif;
-    font-weight: 300;
-    color: var(--gray);
+	font-size: 17px;
+	font-family: "Lato", sans-serif;
+	font-weight: 300;
+	color: var(--gray);
 }
 
 .overview-bottom p a {
-    text-decoration: none;
+	text-decoration: none;
+}
+
+.registered-link {
+	font-weight: 400;
+	color: var(--turquoise);
+}
+
+.registered-link:hover {
+	text-decoration: underline;
 }

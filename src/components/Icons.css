@@ -1,16 +1,22 @@
 .icons {
-    margin: 0 auto;
-    padding: 0 1em;
+	margin: 0 auto;
+	padding: 0 1em;
 }
 
 .icons h2 {
-    display: block;
-    flex: 0 0 100%;
-    margin-bottom: 1em;
-    font-size: 1.45rem;
-    margin-top: 2rem;
+	display: block;
+	flex: 0 0 100%;
+	margin-bottom: 1em;
+	font-size: 1.45rem;
+	margin-top: 2rem;
 }
 
 .icon-flex {
-    display: flex;
+	display: flex;
+	margin: 0 auto;
+	width: 55%;
+}
+
+.middle-tile {
+	margin: 0 25px;
 }
