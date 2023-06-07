@@ -46,7 +46,7 @@ const Icons = (props) => {
 						}
 						h4={tile.IconTitle}
 						p={tile.IconDescription}
-						middleTile={index === 1}
+						middleTile={index === 1 && props.appWidth >= 768}
 					/>
 				);
 			})}

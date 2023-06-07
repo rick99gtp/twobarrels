@@ -1,69 +1,81 @@
 .footer__container {
-    text-align: center;
-    display: block;
-    background: #fff;
-    background: url('../assets/raptor.png');
-    background-repeat: no-repeat;
-    background-position: bottom right;
-    background-size: 100px;
-    padding-top: 1em;
-    padding-bottom: 1em;
-    color: var(--gray);
+	text-align: center;
+	display: block;
+	background: #fff;
+	background: url("../assets/raptor.png");
+	background-repeat: no-repeat;
+	background-position: bottom right;
+	background-size: 70px;
+	padding-top: 1em;
+	padding-bottom: 1em;
+	color: var(--gray);
 }
 
 .footer__container p {
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 22px;
-    letter-spacing: 1px;
-    margin-bottom: 0;
-    text-transform: uppercase;
-    font-family: 'Lato', sans-serif;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 22px;
+	letter-spacing: 1px;
+	margin-bottom: 0;
+	text-transform: uppercase;
+	font-family: "Lato", sans-serif;
 }
 
 .footer-text {
-    margin: 1em 0 2em 0;
+	margin: 1em 0 2em 0;
 }
 
 .footer__container p.office-name {
-    text-transform: uppercase;
-    color: var(--orange);
-    font-weight: 700;
+	text-transform: uppercase;
+	color: var(--orange);
+	font-weight: 700;
 }
 
 .footer__container--footer-text a {
-    color: var(--gray);
-    font-weight: 400;
+	color: var(--gray);
+	font-weight: 400;
 }
 
 .footer__container--socials {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 1em 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 1em 0;
 }
 
 .footer__container--socials ul {
-    list-style: none;
-    line-height: 1.6;
-    display: flex;
+	list-style: none;
+	line-height: 1.6;
+	display: flex;
 }
 
 .footer__container--socials ul li {
-    text-align: center;
-    margin-bottom: 14px;
+	text-align: center;
+	margin-bottom: 14px;
 }
 
 .footer__container--socials ul li a {
-    font-size: 34px;
-    border: 3px solid transparent;
-    border-radius: 100%;
-    transition: all .25s;
-    color: var(--orange);
-    line-height: 29px;
-    font-weight: 700;
+	font-size: 34px;
+	border: 3px solid transparent;
+	border-radius: 100%;
+	transition: all 0.25s;
+	color: var(--orange);
+	line-height: 29px;
+	font-weight: 700;
 }
 
-address:last-child {
-    margin-top: 30px;
+address {
+	margin-bottom: 30px;
+	font-style: normal;
+}
+
+.privacy-policy ul {
+	list-style: none;
+	line-height: 1.6;
+}
+
+.privacy-policy ul li {
+	font-size: 13px;
+	color: #5c5c5c;
+	font-weight: 700;
 }
