@@ -1,44 +1,25 @@
 import "./PositionsLower.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { useState, useEffect, Children } from "react";
+import { useState, useEffect } from "react";
 
 const PositionsLower = (props) => {
 	const [ulVisible, setUlVisible] = useState(false);
-	const [ulHeight, setUlHeight] = useState(null);
 	const [activeIcon, setActiveIcon] = useState("plus");
-
-	const calculateHeight = () => {
-		const count = Children.count(props.children);
-
-		return {
-			height: `${count * 55}px`,
-		};
-	};
-
-	useEffect(() => {
-		setUlHeight(calculateHeight());
-	}, []);
 
 	useEffect(() => {
 		if (!ulVisible) {
-			setUlHeight({
-				height: "0px",
-			});
-
 			setActiveIcon("plus");
 		} else {
-			setUlHeight(calculateHeight());
 			setActiveIcon("minus");
 		}
 	}, [ulVisible]);
 
-	const changeUlVisible = () => {
-		setUlVisible(!ulVisible);
-	};
-
 	return (
 		<div className="position__container">
-			<div className="position-item" onClick={changeUlVisible}>
+			<div
+				className={`position-item ${ulVisible && "dropdown-active"}`}
+				onClick={() => setUlVisible(!ulVisible)}
+			>
 				<h4>{props.title}</h4>
 				<FontAwesomeIcon icon={activeIcon} className="fa-position" />
 			</div>
