@@ -7,12 +7,12 @@ import background from "../assets/tboverlay4.png";
 import ExitMobile from "./ExitMobile";
 
 const Header = (props) => {
-	console.log(props.componentWidth);
-
 	return (
 		<div className="header" style={{ backgroundImage: `url(${background})` }}>
 			<Logo />
 			<Menu
+				activeMenu={props.activeMenu}
+				setActiveMenu={props.setActiveMenu}
 				menuOpen={props.menuOpen}
 				activePage={props.activePage}
 				changeMenuOpen={props.changeMenuOpen}

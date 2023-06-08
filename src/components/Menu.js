@@ -1,11 +1,8 @@
 import "./Menu.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Link } from "react-router-dom";
-import { useState } from "react";
 
-const Menu = ({ menuOpen, activePage, changeMenuOpen }) => {
-	const [activeMenu, setActiveMenu] = useState(0);
-
+const Menu = ({ activeMenu, setActiveMenu, menuOpen, changeMenuOpen }) => {
 	const hideMenu = (page) => {
 		changeMenuOpen();
 		setActiveMenu(page);
@@ -45,12 +42,12 @@ const Menu = ({ menuOpen, activePage, changeMenuOpen }) => {
 				<ul>
 					{menuOptions.map((option, index) => {
 						return (
-							<li
-								style={{
-									backgroundColor: `${activeMenu === index ? "#003454" : ""}`,
-								}}
-							>
-								<Link to={`/${option.link}`} onClick={() => hideMenu(index)}>
+							<Link to={`/${option.link}`} onClick={() => hideMenu(index)}>
+								<li
+									style={{
+										backgroundColor: `${activeMenu === index ? "#003454" : ""}`,
+									}}
+								>
 									<FontAwesomeIcon
 										icon={option.icon}
 										style={{
@@ -63,8 +60,8 @@ const Menu = ({ menuOpen, activePage, changeMenuOpen }) => {
 									<span className={activeMenu === index ? "active-menu" : ""}>
 										{option.name}
 									</span>
-								</Link>
-							</li>
+								</li>
+							</Link>
 						);
 					})}
 				</ul>

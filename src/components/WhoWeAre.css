@@ -1,57 +1,62 @@
 .whoweare__container {
-    background: var(--light-gray);
-    padding: 4em 1em 1em 1em;
+	background: var(--light-gray);
+	padding: 4em 1em 1em 1em;
 }
 
 .whoweare__container--staff {
-    padding-bottom: 4em;
+	padding-bottom: 4em;
 }
 
 .person-container {
-    position: relative;
-    overflow: hidden;
-    margin-bottom: 30px;
+	position: relative;
+	overflow: hidden;
+	margin-bottom: 30px;
 }
 
 .whoweare__container h1 {
-    text-align: center;
-    font-size: 2rem;
-    margin-top: 1rem;
-    font-weight: 900;
-    font-family: 'Raleway', sans-serif;
-    color: var(--gray);
-    line-height: 1.4;
-    margin-bottom: .5rem;
+	text-align: center;
+	font-size: 2rem;
+	margin-top: 1rem;
+	font-weight: 900;
+	font-family: "Raleway", sans-serif;
+	color: var(--gray);
+	line-height: 1.4;
+	margin-bottom: 0.5rem;
 }
 
 .whoweare__container hr {
-    width: 100px;
-    border-bottom: 5px solid var(--orange);
-    max-width: 75rem;
-    height: 0;
-    margin: 1.25rem auto;
-    border-top: 0;
-    border-right: 0;
-    border-left: 0;
+	width: 100px;
+	border-bottom: 5px solid var(--orange);
+	max-width: 75rem;
+	height: 0;
+	margin: 1.25rem auto;
+	border-top: 0;
+	border-right: 0;
+	border-left: 0;
+}
+
+.whoweare__container p {
+	margin-bottom: 1rem;
+	line-height: 1.6;
 }
 
 .inner-div img {
-    transition: all .5s;
-    max-width: 100%;
-    height: auto;
+	transition: all 0.5s;
+	max-width: 100%;
+	height: auto;
 }
 
 .inner-div-text h5 {
-    font-size: 28px;
-    font-weight: 400;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    padding: 0 20px;
-    color: #fff;
-    transition: all .5s;
-    background: var(--orange);
-    width: 100%;
+	font-size: 28px;
+	font-weight: 400;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	padding: 0 20px;
+	color: #fff;
+	transition: all 0.5s;
+	background: var(--orange);
+	width: 100%;
 }

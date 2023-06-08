@@ -25,6 +25,7 @@ function App() {
 
 	const [menuOpen, setMenuOpen] = useState(false);
 	const [width, setWidth] = useState(window.innerWidth);
+	const [activeMenu, setActiveMenu] = useState(0);
 
 	const changeMenuOpen = () => {
 		setMenuOpen(!menuOpen);
@@ -43,6 +44,8 @@ function App() {
 		<div className="App">
 			<Router>
 				<Header
+					activeMenu={activeMenu}
+					setActiveMenu={setActiveMenu}
 					menuOpen={menuOpen}
 					changeMenuOpen={changeMenuOpen}
 					appWidth={width}

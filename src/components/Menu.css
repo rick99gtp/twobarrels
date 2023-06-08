@@ -42,7 +42,7 @@
 	background-color: var(--menu-hover);
 }
 
-.menu nav ul li a {
+.menu nav ul a li {
 	color: #fff;
 }
 
