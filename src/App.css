@@ -1,59 +1,60 @@
 :root {
-  --orange: #f26823;
-  --blue: #05121a;
-  --menu-hover: #003454;
-  --dark-gray: #f0f0f0;
-  --gray: #363636;
-  --turquoise: #035;
-  --light-gray: #f0f0f0;
+	--orange: #f26823;
+	--blue: #05121a;
+	--menu-hover: #003454;
+	--dark-gray: #f0f0f0;
+	--gray: #363636;
+	--turquoise: #035;
+	--light-gray: #f0f0f0;
+	--white: #ffffff;
 }
 
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
 }
 
 html {
-  line-height: 1.15;
+	line-height: 1.15;
 }
 
 body {
-  font-size: 17px;
-  font-family: 'Lato', sans-serif;
-  color: var(--gray);
-  line-height: 1.5;
+	font-size: 17px;
+	font-family: "Lato", sans-serif;
+	color: var(--gray);
+	line-height: 1.5;
 }
 
 ::-webkit-scrollbar {
-  display: none;
+	display: none;
 }
 
-.row { 
-  padding: 0 1em;
-  max-width: 1000px;
-  margin: 0 auto;
+.row {
+	padding: 0 1em;
+	max-width: 1000px;
+	margin: 0 auto;
 }
 
 p {
-  line-height: 1.6;
-  text-rendering: optimizeLegibility;
-  margin-bottom: 1rem;
+	line-height: 1.6;
+	text-rendering: optimizeLegibility;
+	margin-bottom: 1rem;
 }
 
 a {
-  line-height: inherit;
-  text-decoration: none;
-  cursor: pointer;
+	line-height: inherit;
+	text-decoration: none;
+	cursor: pointer;
 }
 
 ul li {
-  font-size: 17px;
-  font-family: 'Lato', sans-serif;
-  font-weight: 300;
-  color: var(--gray);
+	font-size: 17px;
+	font-family: "Lato", sans-serif;
+	font-weight: 300;
+	color: var(--gray);
 }
 
 .App {
-  background: #fff;
+	background: #fff;
 }

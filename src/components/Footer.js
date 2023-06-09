@@ -17,7 +17,8 @@ const Footer = () => {
 					</address>
 					<address>
 						<p className="office-name">Austin Office</p>
-						<p>5900 Balcones Drive, Suite 100</p>
+						<p>5900 Balcones Drive</p>
+						<p>Suite 100</p>
 						<p>Austin, TX 78731</p>
 					</address>
 					<address>
