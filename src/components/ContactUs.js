@@ -10,6 +10,8 @@ const ContactUs = () => {
 	const [messageValue, setMessageValue] = useState("");
 	const [emailValue, setEmailValue] = useState("");
 
+	const API_KEY = process.env.REACT_APP_API_KEY;
+
 	return (
 		<div className="contactus__container">
 			{!isMobile && (
@@ -19,10 +21,10 @@ const ContactUs = () => {
 							title="a"
 							width={mapWidth}
 							height="250"
-							frameborder="0"
-							referrerpolicy="no-referrer-when-downgrade"
-							src="https://www.google.com/maps/embed/v1/place?key=AIzaSyDUiBDF9M4yny7DyppKsJ5Rn4SHZUphvMs&q=47.658166,-117.420&zoom=17"
-							allowfullscreen
+							frameBorder="0"
+							referrerPolicy="no-referrer-when-downgrade"
+							src={`https://www.google.com/maps/embed/v1/place?key=${API_KEY}&q=47.658166,-117.420&zoom=17`}
+							allowFullScreen
 						></iframe>
 					</div>
 					<div className="map">
@@ -30,10 +32,10 @@ const ContactUs = () => {
 							title="b"
 							width={mapWidth}
 							height="250"
-							frameborder="0"
-							referrerpolicy="no-referrer-when-downgrade"
-							src="https://www.google.com/maps/embed/v1/place?key=AIzaSyDUiBDF9M4yny7DyppKsJ5Rn4SHZUphvMs&q=30.341415,-97.754743&zoom=17"
-							allowfullscreen
+							frameBorder="0"
+							referrerPolicy="no-referrer-when-downgrade"
+							src={`https://www.google.com/maps/embed/v1/place?key=${API_KEY}&q=30.341415,-97.754743&zoom=17`}
+							allowFullScreen
 						></iframe>
 					</div>
 					<div className="map">
@@ -41,10 +43,10 @@ const ContactUs = () => {
 							title="c"
 							width={mapWidth}
 							height="250"
-							frameborder="0"
-							referrerpolicy="no-referrer-when-downgrade"
-							src="https://www.google.com/maps/embed/v1/place?key=AIzaSyDUiBDF9M4yny7DyppKsJ5Rn4SHZUphvMs&q=40.62665,-111.85662&zoom=17"
-							allowfullscreen
+							frameBorder="0"
+							referrerPolicy="no-referrer-when-downgrade"
+							src={`https://www.google.com/maps/embed/v1/place?key=${API_KEY}&q=40.62665,-111.85662&zoom=17`}
+							allowFullScreen
 						></iframe>
 					</div>
 				</div>
