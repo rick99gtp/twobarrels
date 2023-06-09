@@ -1,3 +1,10 @@
+import {
+	faPencilAlt,
+	faCode,
+	faUsers,
+	faCogs,
+} from "@fortawesome/free-solid-svg-icons";
+
 const jobList = [
 	{
 		title: "Senior PHP Developer",
@@ -5,7 +12,7 @@ const jobList = [
 		location: "Remote | Spokane - Austin - SLC",
 		workType: "Full Time",
 		salary: "$160,000/year",
-		icon: "code",
+		icon: faCode,
 		note: "",
 	},
 	{
@@ -14,7 +21,7 @@ const jobList = [
 		location: "Remote | Spokane - Austin - SLC",
 		workType: "Full Time",
 		salary: "$185,000/year",
-		icon: "code",
+		icon: faCode,
 		note: "",
 	},
 	{
@@ -23,7 +30,7 @@ const jobList = [
 		location: "Remote | Spokane - Austin - SLC",
 		workType: "Full Time",
 		salary: "$200,000/year",
-		icon: "users",
+		icon: faUsers,
 		note: "",
 	},
 	{
@@ -32,7 +39,7 @@ const jobList = [
 		location: "Remote | Spokane - Austin - SLC",
 		workType: "Full Time",
 		salary: "$200,000/year",
-		icon: "code",
+		icon: faCode,
 		note: "",
 	},
 	{
@@ -41,7 +48,7 @@ const jobList = [
 		location: "Remote | Spokane - Austin - SLC",
 		workType: "Full Time",
 		salary: "$65,000 - $120,000/year DOE",
-		icon: "code",
+		icon: faCode,
 		note: "Sorry for the range, but we have so many products and we're open to paying people from all experience ranges to help run our products.",
 	},
 	{
@@ -50,7 +57,7 @@ const jobList = [
 		location: "Spokane, WA | Austin, TX | Sale Lake, UT",
 		workType: "Remote - Full Time",
 		salary: "$185,000/year",
-		icon: "code",
+		icon: faCode,
 		note: "",
 	},
 	{
@@ -59,7 +66,7 @@ const jobList = [
 		location: "Remote | Spokane - Austin - SLC",
 		workType: "Full Time",
 		salary: "$185,000/year",
-		icon: "code",
+		icon: faCode,
 		note: "",
 	},
 	{
@@ -68,7 +75,7 @@ const jobList = [
 		location: "Remote | Spokane - Austin - SLC",
 		workType: "Full Time",
 		salary: "$150,000/year",
-		icon: "code",
+		icon: faCode,
 		note: "",
 	},
 	{
@@ -77,7 +84,7 @@ const jobList = [
 		location: "Remote | Spokane - Austin - SLC",
 		workType: "Full Time",
 		salary: "$175,000/year",
-		icon: "cogs",
+		icon: faCogs,
 		note: "",
 	},
 	{
@@ -86,7 +93,7 @@ const jobList = [
 		location: "Remote | Spokane - Austin - SLC",
 		workType: "Full Time",
 		salary: "$150,000/year",
-		icon: "pencil",
+		icon: faPencilAlt,
 		note: "",
 	},
 	{
@@ -95,7 +102,7 @@ const jobList = [
 		location: "Remote | Spokane - Austin - SLC",
 		workType: "Full Time",
 		salary: "$140,000 - $170,000/year",
-		icon: "code",
+		icon: faCode,
 		note: "",
 	},
 	{
@@ -104,7 +111,7 @@ const jobList = [
 		location: "Spokane WA, Austin TX, Salt Lake UT vicinity preferred",
 		workType: "Full Time",
 		salary: "$200,000/year",
-		icon: "users",
+		icon: faUsers,
 		note: "We are family owned and run, so there's no share compensation or bonus structure as part of the compensation package.",
 	},
 	{
@@ -113,7 +120,7 @@ const jobList = [
 		location: "Spokane - Austin - Salt Lake City",
 		workType: "Full Time",
 		salary: "Up to $350,000/year DOE",
-		icon: "users",
+		icon: faUsers,
 		note: "It's a family owned and operated business, and as such, it's just a normal type salary compensation package. Relocation assistance available for Spokane only. Depending on your network and ability to attract talent localy, we are also considering candidates who already live near our Austin TX or Salt Lake City UT offices, but we cannot offer relocation assistance to these cities.",
 	},
 	{
@@ -122,7 +129,7 @@ const jobList = [
 		location: "Spokane, WA",
 		workType: "Full Time",
 		salary: "$55,000 - $60,000/year",
-		icon: "pencil",
+		icon: faPencilAlt,
 		note: "(Candidates qualify for the higher end of the range if you have a degree in Design.)",
 	},
 ];
