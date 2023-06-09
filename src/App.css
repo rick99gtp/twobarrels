@@ -57,4 +57,5 @@ ul li {
 
 .App {
 	background: #fff;
+	background: var(--light-gray);
 }

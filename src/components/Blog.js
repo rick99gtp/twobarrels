@@ -1,44 +1,85 @@
-import './Blog.css';
-import { Link } from 'react-router-dom';
+import "./Blog.css";
+import { Link } from "react-router-dom";
+import BlogItems from "./BlogItems";
+import parse from "html-react-parser";
+import { useEffect, useState } from "react";
 
 const Blog = () => {
-    return (
-        <div className='blog__container'>
-            <h1 className='blog-h1'>Latest Posts</h1>
-            <article>
-                <h2 className='post-title'><Link to='/'>Finding the Best Fried Chicken Sandwich in Spokane</Link></h2>
-                <div className='post-details'>
-                    <span>November 20, 2021 10:00 am</span>
-                </div>
-                <p>
-                    While Southern fried chicken finds its origins in Scottish and West
-                     African cuisine, the fried chicken sandwich is a wholly American 
-                     invention, and while Spokane isn’t yet a foodie destination, when 
-                     it comes to fried chicken sandwiches, this town has a bevy of options. 
-                     Therefore I made it my goal to try as many local fried chicken sandwiches 
-                     as I could, and hopefully not die from a heart attack in the process. 
-                     I ordered chicken sandwiches at a total of...
-                     <Link to='/blog-finding-best-fried-chicken-sandwich-spokane'>View Article</Link>
-                </p>
-            </article>
-            <article>
-                <h2 className='post-title'><Link to='/'>Finding the Best Fried Chicken Sandwich in Spokane</Link></h2>
-                <div className='post-details'>
-                    <span>February 11, 2021 6:45 pm</span>
-                </div>
-                <p>
-                    While Southern fried chicken finds its origins in Scottish and West
-                     African cuisine, the fried chicken sandwich is a wholly American 
-                     invention, and while Spokane isn’t yet a foodie destination, when 
-                     it comes to fried chicken sandwiches, this town has a bevy of options. 
-                     Therefore I made it my goal to try as many local fried chicken sandwiches 
-                     as I could, and hopefully not die from a heart attack in the process. 
-                     I ordered chicken sandwiches at a total of...
-                     <Link to='/blog-finding-best-fried-chicken-sandwich-spokane'>View Article</Link>
-                </p>
-            </article>
-        </div>
-    )
-}
+	const [page, setPage] = useState(0);
+	const [pageCount, setPageCount] = useState(0);
+
+	useEffect(() => {
+		// when the page loads, determine if pagination is required
+		setPageCount(Math.floor(BlogItems.length / 10) + 1);
+		// if (BlogItems.length > 10) {
+		// 	setPage(1);
+		// }
+	}, []);
+
+	useEffect(() => {
+		console.log("PageCount: ", pageCount);
+	}, [pageCount]);
+	return (
+		<div className="blog__container">
+			<h1 className="blog-h1">Latest Posts</h1>
+			{BlogItems.slice(page * 10, page * 10 + 10).map((item, index) => {
+				return (
+					<article>
+						<h2 className="post-title">
+							<Link to={item.link}>{parse(item.title)}</Link>
+						</h2>
+						<div className="post-details">
+							<span>{item.date}</span>
+						</div>
+						<p>
+							{item.text}
+							<Link className="view-article" to={item.link}>
+								{" "}
+								View Article
+							</Link>
+						</p>
+					</article>
+				);
+			})}
+			{pageCount > 1 ? (
+				<div className="pagination-container">
+					{page + 1 > 1 ? (
+						<div
+							className="previous-page"
+							onClick={() => {
+								setPage(() => page - 1);
+								window.scrollTo(0, 0);
+							}}
+						>
+							« Previous
+						</div>
+					) : null}
+					{Array.from({ length: pageCount }, (_, i) => (
+						<div
+							onClick={() => {
+								setPage(i);
+								window.scrollTo(0, 0);
+							}}
+							className={`page-number ${page === i ? "active-page" : ""}`}
+						>
+							{i + 1}
+						</div>
+					))}
+					{page + 1 < pageCount ? (
+						<div
+							className="next-page"
+							onClick={() => {
+								setPage(() => page + 1);
+								window.scrollTo(0, 0);
+							}}
+						>
+							Next »
+						</div>
+					) : null}
+				</div>
+			) : null}
+		</div>
+	);
+};
 
 export default Blog;
