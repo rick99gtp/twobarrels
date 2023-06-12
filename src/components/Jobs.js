@@ -26,6 +26,7 @@ const Jobs = () => {
 							work_type={job.workType}
 							salary={job.salary}
 							note={job.note}
+							route={job.route}
 						/>
 					);
 				})}

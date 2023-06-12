@@ -2,15 +2,8 @@ import "./JobPost.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Link } from "react-router-dom";
 
-const JobPost = ({
-	priority,
-	title,
-	location,
-	salary,
-	icon,
-	note,
-	work_type,
-}) => {
+const JobPost = ({ priority, title, location, salary, icon, note, route }) => {
+	console.log(route);
 	return (
 		<div className="job-post__container">
 			<FontAwesomeIcon icon={icon} className="fa-icon" />
@@ -24,7 +17,7 @@ const JobPost = ({
 			<h5>{salary}</h5>
 			{note && <h5>{note}</h5>}
 			<Link
-				to="/"
+				to={`/jobs${route}`}
 				style={{
 					position: "relative",
 					letterSpacing: "2px",

@@ -2,7 +2,7 @@ import "./Icons.css";
 import Icon from "./Icon";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-const Icons = (props) => {
+const Icons = ({ appWidth, setActiveMenu }) => {
 	const iconStyle = {
 		fontSize: "36px",
 		overflow: "hidden",
@@ -33,7 +33,7 @@ const Icons = (props) => {
 	];
 
 	return (
-		<div className={`icons ${props.appWidth >= 768 ? "icon-flex" : ""}`}>
+		<div className={`icons ${appWidth >= 768 ? "icon-flex" : ""}`}>
 			{tiles.map((tile, index) => {
 				return (
 					<Icon
@@ -46,7 +46,8 @@ const Icons = (props) => {
 						}
 						h4={tile.IconTitle}
 						p={tile.IconDescription}
-						middleTile={index === 1 && props.appWidth >= 768}
+						middleTile={index === 1 && appWidth >= 768}
+						setActiveMenu={setActiveMenu}
 					/>
 				);
 			})}

@@ -12,6 +12,7 @@ import {
 	faTumblrSquare,
 	faLinkedin,
 } from "@fortawesome/free-brands-svg-icons";
+import ScrollToTop from "./components/ScrollToTop";
 
 function App() {
 	library.add(
@@ -43,6 +44,7 @@ function App() {
 	return (
 		<div className="App">
 			<Router>
+				<ScrollToTop />
 				<Header
 					activeMenu={activeMenu}
 					setActiveMenu={setActiveMenu}
@@ -50,7 +52,7 @@ function App() {
 					changeMenuOpen={changeMenuOpen}
 					appWidth={width}
 				/>
-				<Main appWidth={width} />
+				<Main appWidth={width} setActiveMenu={setActiveMenu} />
 			</Router>
 		</div>
 	);
