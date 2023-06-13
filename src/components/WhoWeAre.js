@@ -1,7 +1,12 @@
 import "./WhoWeAre.css";
 import Staff from "./Staff";
+import { useEffect } from "react";
 
 const WhoWeAre = () => {
+	useEffect(() => {
+		document.title = "Who freaking works here? | Two Barrels LLC";
+	}, []);
+
 	const staff = Staff.personData.map((e, idx) => (
 		<div className="person-container" key={idx}>
 			<div className="inner-div">

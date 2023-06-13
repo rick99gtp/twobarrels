@@ -13,6 +13,7 @@ const Header = ({
 	activePage,
 	changeMenuOpen,
 	appWidth,
+	setJobSubMenusVisible,
 }) => {
 	return (
 		<div className="header" style={{ backgroundImage: `url(${background})` }}>
@@ -23,6 +24,7 @@ const Header = ({
 				menuOpen={menuOpen}
 				activePage={activePage}
 				changeMenuOpen={changeMenuOpen}
+				setJobSubMenusVisible={setJobSubMenusVisible}
 			/>
 			{appWidth < 768 ? (
 				<MobileMenuTrigger onchange={() => changeMenuOpen()} />

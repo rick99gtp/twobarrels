@@ -8,8 +8,13 @@ import {
 	lookingForSoftware,
 	lookingForDigital,
 } from "./LookingForJobsList";
+import { useEffect } from "react";
 
 const Jobs = () => {
+	useEffect(() => {
+		document.title =
+			"Software Engineering and Web Development Jobs in Spokane, WA";
+	}, []);
 	return (
 		<div className="jobs__container row">
 			<h1>Jobs</h1>
@@ -27,6 +32,7 @@ const Jobs = () => {
 							salary={job.salary}
 							note={job.note}
 							route={job.route}
+							worktype={job.workType}
 						/>
 					);
 				})}

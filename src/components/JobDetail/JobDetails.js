@@ -192,7 +192,7 @@ export const jobDetails = {
 		youMightLikeThisJob:
 			"<p>You are fascinated with a good experience you had at a business. What went behind that? You are interested in what the user needs, why they need it, and how you build a full product that makes the customer, customer service employees, and the technology employees making that happen behind the scenes function as well as possible. You love the challenge of refining for continual improvement. You think products are actually what makes the world turn.</p><p>#BI-Remote</p>",
 	},
-	"senior-software-engineer": {
+	"senior-software-engineer-voip": {
 		title: "Senior Software Engineer - VoIP",
 		overview:
 			"<p>Two Barrels is hiring a Senior Software Engineer – VoIP to join our team for $185,000/year. You will be a traditional company employee. This is a full time 40 hour M-F position with company benefits. This is a remote position. Our main office is in Spokane WA, and we have satellite offices in Austin TX and Salt Lake City UT.</p><p>We are looking for you; a software engineer with strong networking, software and telecom background. VoIP – Voice over Internet Protocol, we are looking for a Senior Software Engineer that has hands on experience building these services, specifically someone who wants to breate a secure network. We’re looking to continue building out our VOIP products and need someone who nerds out on this stuff. To be successful in this role, you should have hands-on experience in configuration, integration and development with VOIP Soft PBX Solution vendors or similar. You’ll work closely with our Telecom PM to make this product bigger and better.</p>",

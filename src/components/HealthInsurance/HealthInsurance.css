@@ -1,0 +1,22 @@
+.icon-list-item {
+	display: flex;
+	position: relative;
+	margin-bottom: 10px;
+}
+
+.icon-list-item p {
+	padding-left: 70px;
+}
+
+.icon-list-item svg {
+	color: var(--orange);
+}
+
+a {
+	font-family: "Lato", sans-serif;
+	color: var(--turquoise);
+	font-weight: 400;
+	text-decoration: none;
+	line-height: inherit;
+	cursor: pointer;
+}

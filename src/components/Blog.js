@@ -11,14 +11,8 @@ const Blog = () => {
 	useEffect(() => {
 		// when the page loads, determine if pagination is required
 		setPageCount(Math.floor(BlogItems.length / 10) + 1);
-		// if (BlogItems.length > 10) {
-		// 	setPage(1);
-		// }
 	}, []);
 
-	useEffect(() => {
-		console.log("PageCount: ", pageCount);
-	}, [pageCount]);
 	return (
 		<div className="blog__container">
 			<h1 className="blog-h1">Latest Posts</h1>

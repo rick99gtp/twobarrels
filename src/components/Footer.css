@@ -1,7 +1,7 @@
 .footer__container {
 	text-align: center;
 	display: block;
-	background: #fff;
+	background: #fff !important;
 	background: url("../assets/raptor.png");
 	background-repeat: no-repeat;
 	background-position: bottom right;

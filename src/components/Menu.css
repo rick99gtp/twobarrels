@@ -36,6 +36,7 @@
 
 .menu nav ul li span {
 	padding-left: 24px;
+	color: var(--white);
 }
 
 .menu nav ul li:hover {
@@ -50,6 +51,6 @@
 	color: var(--orange);
 }
 
-.active-menu {
+.nav ul a li span.active-menu {
 	color: var(--orange);
 }

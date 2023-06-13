@@ -16,7 +16,7 @@ import Coffee from "./Coffee/Coffee";
 import { Switch, Route } from "react-router-dom";
 import Footer from "./Footer";
 
-const Main = ({ appWidth, setActiveMenu }) => {
+const Main = ({ appWidth, setActiveMenu, jobSubMenusVisible }) => {
 	return (
 		<div className="main">
 			<Switch>
@@ -30,7 +30,7 @@ const Main = ({ appWidth, setActiveMenu }) => {
 					<JobDetail jobTitle="senior-engineer" />
 				</Route>
 				<Route path="/jobs/information-security-director">
-					<JobDetail jobTitle="security-director" />
+					<JobDetail jobTitle="information-security-director" />
 				</Route>
 				<Route path="/jobs/management/director-of-voip">
 					<JobDetail jobTitle="director-of-voip" />
@@ -90,7 +90,7 @@ const Main = ({ appWidth, setActiveMenu }) => {
 					<Coffee />
 				</Route>
 				<Route path="/jobs">
-					<Jobs />
+					<Jobs jobSubMenusVisible={jobSubMenusVisible} />
 				</Route>
 				<Route path="/contactus">
 					<ContactUs />

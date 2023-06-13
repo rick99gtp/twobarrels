@@ -26,6 +26,18 @@ body {
 	line-height: 1.5;
 }
 
+.button,
+body,
+ol lik,
+p,
+span,
+ul li {
+	font-size: 17px;
+	font-family: "Lato", sans-serif;
+	color: var(--gray);
+	font-weight: 300;
+}
+
 ::-webkit-scrollbar {
 	display: none;
 }

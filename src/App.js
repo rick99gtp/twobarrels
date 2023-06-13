@@ -26,7 +26,8 @@ function App() {
 
 	const [menuOpen, setMenuOpen] = useState(false);
 	const [width, setWidth] = useState(window.innerWidth);
-	const [activeMenu, setActiveMenu] = useState(0);
+	const [activeMenu, setActiveMenu] = useState("overview");
+	const [jobSubMenusVisible, setJobSubMenusVisible] = useState(false);
 
 	const changeMenuOpen = () => {
 		setMenuOpen(!menuOpen);
@@ -36,10 +37,16 @@ function App() {
 		const handleResizeWindow = () => setWidth(window.innerWidth);
 
 		window.addEventListener("resize", handleResizeWindow);
+
+		document.title = "Two Barrels LLC | Software Company | When 1 Isn't Enough";
 		return () => {
 			window.removeEventListener("resize", handleResizeWindow);
 		};
 	}, []);
+
+	useEffect(() => {
+		console.log(`job sub menus visible = ${jobSubMenusVisible}`);
+	}, [jobSubMenusVisible]);
 
 	return (
 		<div className="App">
@@ -51,8 +58,15 @@ function App() {
 					menuOpen={menuOpen}
 					changeMenuOpen={changeMenuOpen}
 					appWidth={width}
+					setJobSubMenusVisible={setJobSubMenusVisible}
+					jobSubMenusVisible={jobSubMenusVisible}
 				/>
-				<Main appWidth={width} setActiveMenu={setActiveMenu} />
+				<Main
+					appWidth={width}
+					setActiveMenu={setActiveMenu}
+					jobSubMenusVisible={jobSubMenusVisible}
+					setJobSubMenusVisible={setJobSubMenusVisible}
+				/>
 			</Router>
 		</div>
 	);

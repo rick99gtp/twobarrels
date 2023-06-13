@@ -2,9 +2,16 @@ import "./JobDetail.css";
 import parse from "html-react-parser";
 import { Link } from "react-router-dom";
 import { jobDetails, benefits } from "./JobDetails";
+import { useEffect } from "react";
 
 const JobDetail = ({ jobTitle }) => {
+	console.log(jobTitle);
 	const jobDetailObj = jobDetails[jobTitle];
+	console.log({ jobDetailObj });
+
+	useEffect(() => {
+		document.title = jobDetailObj.title;
+	}, []);
 	return (
 		<div className="job-detail-container">
 			<h1 className="job-details-title">{jobDetailObj.title}</h1>
@@ -27,7 +34,7 @@ const JobDetail = ({ jobTitle }) => {
 
 			{/* Responsibilities */}
 			<h3>Responsibilities</h3>
-			<ul style={{ listStyleType: "square" }}>
+			<ul>
 				{jobDetailObj.responsibilities.map((item, index) => {
 					return <li key={index}>{item}</li>;
 				})}
@@ -35,7 +42,7 @@ const JobDetail = ({ jobTitle }) => {
 
 			{/* Minimum Qualifications */}
 			<h3>Minimum Qualifications</h3>
-			<ul style={{ listStyleType: "square" }}>
+			<ul>
 				{jobDetailObj.minimumQualifications.map((item, index) => {
 					return <li key={index}>{item}</li>;
 				})}
@@ -43,7 +50,7 @@ const JobDetail = ({ jobTitle }) => {
 
 			{/* Preferred Qualifications */}
 			<h3>Preferred Qualifications</h3>
-			<ul style={{ listStyleType: "square" }}>
+			<ul>
 				{jobDetailObj.preferredQualifications.map((item, index) => {
 					return <li key={index}>{item}</li>;
 				})}
@@ -55,8 +62,8 @@ const JobDetail = ({ jobTitle }) => {
 
 			{/* Benefits */}
 			<h3>Benefits:</h3>
-			<ul style={{ listStyleType: "square" }}>
-				{benefits.map((benefit, index) => {
+			<ul className="job-detail-benefits">
+				{benefits.map((benefit) => {
 					return (
 						<li>
 							{benefit.route !== null ? (
