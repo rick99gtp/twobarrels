@@ -86,16 +86,16 @@ const Menu = ({
 				<ul>
 					{menuOptions.map((option, index) => {
 						return (
-							<Link
-								to={`/${option.link}`}
-								onClick={() => hideMenu(option.link)}
+							<li
+								style={{
+									backgroundColor: `${
+										activeMenu === option.link ? "#003454" : ""
+									}`,
+								}}
 							>
-								<li
-									style={{
-										backgroundColor: `${
-											activeMenu === option.link ? "#003454" : ""
-										}`,
-									}}
+								<Link
+									to={`/${option.link}`}
+									onClick={() => hideMenu(option.link)}
 								>
 									<FontAwesomeIcon
 										icon={option.icon}
@@ -113,28 +113,33 @@ const Menu = ({
 									>
 										{option.name}
 										{/* Display jobs sub menus if Jobs is the active menu */}
-										{jobSubMenusVisible
-											? option.submenus.map((menu) => {
+										<ul
+											style={{
+												display: activeMenu === "jobs" ? "block" : "none",
+											}}
+										>
+											{option.submenus.length > 0 &&
+												option.submenus.map((menu) => {
 													return (
-														<Link
-															to={`/${menu.link}`}
-															onClick={() => hideMenu(menu.link)}
+														<li
+															style={{
+																backgroundColor: `${
+																	activeMenu === menu.link ? "#003454" : ""
+																}`,
+															}}
 														>
-															<li
-																style={{
-																	backgroundColor: `${
-																		activeMenu === option.link ? "#003454" : ""
-																	}`,
-																}}
+															<Link
+																to={`/${menu.link}`}
+																onClick={() => hideMenu(menu.link)}
 															>
 																<FontAwesomeIcon
-																	icon={option.icon}
+																	icon={menu.icon}
 																	style={{
-																		fontSize: "21px",
+																		fontSize: "10px",
 																		top: "3px",
 																		position: "relative",
 																		color: `${
-																			activeMenu === option.link
+																			activeMenu === menu.link
 																				? "var(--orange)"
 																				: ""
 																		}`,
@@ -149,14 +154,14 @@ const Menu = ({
 																>
 																	{menu.name}
 																</span>
-															</li>
-														</Link>
+															</Link>
+														</li>
 													);
-											  })
-											: null}
+												})}
+										</ul>
 									</span>
-								</li>
-							</Link>
+								</Link>
+							</li>
 						);
 					})}
 				</ul>
