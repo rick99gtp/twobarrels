@@ -520,37 +520,46 @@ export const benefits = [
 	{
 		text: "Great Wage",
 		route: "/jobs/benefits/wages",
+		icon: "money-bill",
 	},
 	{
 		text: "WFH comfort package",
 		route: "/jobs/benefits/wfh-comfort-package",
+		icon: "money-bill",
 	},
 	{
 		text: "22 days paid time off (29 days after 3 years. Flexible time off after 5 years!)",
 		route: "/jobs/benefits/pto",
+		icon: "calendar",
 	},
 	{
 		text: "4% retirement matching through Fidelity",
 		route: "/jobs/benefits/retirement",
+		icon: "chart-pie",
 	},
 	{
 		text: "100% employer-paid medical, dental and vision for employees",
 		route: "/jobs/benefits/health-insurance",
+		icon: "ambulance",
 	},
 	{
 		text: "Maternity and Paternity Leave",
 		route: "/jobs/benefits/maternity-paternity-leave",
+		icon: "users",
 	},
 	{
 		text: "Flexible hours",
 		route: "/jobs/benefits/flexible-hours",
+		icon: "hand-peace",
 	},
 	{
 		text: "Coffee shop next door",
 		route: "/jobs/benefits/coffee",
+		icon: "utensils",
 	},
 	{
 		text: "<del>Crappy parking?</del> Oh, I mean a cool downtown location for easy public transportation options…",
 		route: null,
+		icon: "car",
 	},
 ];

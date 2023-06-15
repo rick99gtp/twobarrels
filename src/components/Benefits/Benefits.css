@@ -1,9 +1,19 @@
-.benefits-container ul {
-	list-style-type: square;
+ul.benefits-list {
+	list-style-type: none;
 	padding: 0 1em;
-	margin-left: 1rem;
+	margin-left: 0;
 }
 
-.benefits-container ul li {
+ul.benefits-list li {
 	margin-bottom: 14px;
+}
+
+ul.benefits-list li svg {
+	color: var(--orange);
+	font-size: 28px;
+}
+
+ul.benefits-list .icon-list-item p {
+	padding-left: 30px;
+	margin-bottom: 0;
 }

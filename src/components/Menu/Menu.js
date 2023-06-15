@@ -39,9 +39,9 @@ const Menu = ({
 					name: "How We Work",
 				},
 				{
-					link: "jobs/how-to-get-a-job",
+					link: "jobs/how-to-get-a-job-here",
 					icon: "circle",
-					name: "How To Get A Job",
+					name: "How To Get A Job Here",
 				},
 				{
 					link: "jobs/apply-now",
