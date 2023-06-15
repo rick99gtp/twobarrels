@@ -82,3 +82,39 @@
 ul.sub-menu li a span {
 	font-size: 13px;
 }
+
+@media print, screen and (min-width: 47.5em) {
+	.header nav {
+		border-right: none;
+		position: static;
+		height: initial;
+		padding: 0;
+		box-shadow: none;
+		background: 0 0;
+	}
+
+	.menu {
+		/* left: 0; */
+		position: static;
+		width: auto;
+		border: 0;
+	}
+
+	.header nav ul li:first-of-type {
+		border-top: none;
+	}
+
+	.header nav ul li {
+		border-bottom: none;
+	}
+
+	body,
+	ol,
+	li,
+	p,
+	span,
+	ul li {
+		font-size: 19px;
+		line-height: 30px;
+	}
+}

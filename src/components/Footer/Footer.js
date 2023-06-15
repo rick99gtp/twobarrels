@@ -5,7 +5,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 const Footer = () => {
 	return (
 		<div className="footer__container">
-			<div className="row">
+			<div className="row footer-flex">
 				<div className="footer-text">
 					<address>
 						<p className="office-name">Spokane Office</p>
@@ -28,50 +28,52 @@ const Footer = () => {
 						<p>Midvale, UT 84047</p>
 					</address>
 				</div>
-				<div className="footer__container--socials">
-					<ul>
-						<li>
-							<a
-								href="https://twitter.com/GiveEm2Barrels"
-								alt="Twitter"
-								title="Twitter"
-								rel="noopener"
-								target="_blank"
-							>
-								<FontAwesomeIcon icon={["fab", "twitter-square"]} />
-							</a>
-						</li>
-						<li>
-							<a
-								href="https://www.facebook.com/Two-Barrels-LLC-139918443308930/"
-								alt="Facebook"
-								title="Facebook"
-								rel="noopener"
-								target="_blank"
-							>
-								<FontAwesomeIcon icon={["fab", "facebook-square"]} />
-							</a>
-						</li>
-						<li>
-							<a
-								href="https://www.linkedin.com/company/two-barrels-llc/"
-								alt="LinkedIn"
-								title="LinkedIn"
-								rel="noopener"
-								target="_blank"
-							>
-								<FontAwesomeIcon icon={["fab", "linkedin"]} />
-							</a>
-						</li>
-						<li></li>
-					</ul>
-				</div>
-				<div className="privacy-policy">
-					<ul>
-						<li>
-							<Link to="privacy-policy">Privacy Policy</Link>
-						</li>
-					</ul>
+				<div>
+					<div className="footer__container--socials">
+						<ul>
+							<li>
+								<a
+									href="https://twitter.com/GiveEm2Barrels"
+									alt="Twitter"
+									title="Twitter"
+									rel="noopener"
+									target="_blank"
+								>
+									<FontAwesomeIcon icon={["fab", "twitter-square"]} />
+								</a>
+							</li>
+							<li>
+								<a
+									href="https://www.facebook.com/Two-Barrels-LLC-139918443308930/"
+									alt="Facebook"
+									title="Facebook"
+									rel="noopener"
+									target="_blank"
+								>
+									<FontAwesomeIcon icon={["fab", "facebook-square"]} />
+								</a>
+							</li>
+							<li>
+								<a
+									href="https://www.linkedin.com/company/two-barrels-llc/"
+									alt="LinkedIn"
+									title="LinkedIn"
+									rel="noopener"
+									target="_blank"
+								>
+									<FontAwesomeIcon icon={["fab", "linkedin"]} />
+								</a>
+							</li>
+							<li></li>
+						</ul>
+					</div>
+					<div className="privacy-policy">
+						<ul>
+							<li>
+								<Link to="privacy-policy">Privacy Policy</Link>
+							</li>
+						</ul>
+					</div>
 				</div>
 			</div>
 		</div>

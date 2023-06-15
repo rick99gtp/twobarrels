@@ -34,3 +34,13 @@
 .registered-link:hover {
 	text-decoration: underline;
 }
+
+@media print, screen and (min-width: 62.5em) {
+	.overview-bottom h2 {
+		font-size: 2.5rem;
+	}
+
+	.overview-bottom p {
+		font-size: 19px;
+	}
+}

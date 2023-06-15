@@ -53,3 +53,18 @@
 	font-style: normal;
 	text-rendering: optimizeLegibility;
 }
+
+@media print, screen and (min-width: 62.5em) {
+	.overview-awesome h2 {
+		font-size: 2.5rem;
+	}
+
+	.overview-awesome h3 {
+		font-size: 1.9375rem;
+	}
+
+	.overview-awesome ul li,
+	.overview-awesome p {
+		font-size: 19px;
+	}
+}

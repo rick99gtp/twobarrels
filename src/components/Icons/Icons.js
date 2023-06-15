@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const Icons = ({ appWidth, setActiveMenu }) => {
 	const iconStyle = {
-		fontSize: "36px",
+		fontSize: "46px",
 		overflow: "hidden",
 		transition: "all .25s",
 		marginTop: "30px",

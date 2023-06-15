@@ -6,7 +6,7 @@
 	background-position: bottom right;
 	background-size: 70px;
 	padding-top: 1em;
-	padding-bottom: 2.5em;
+	padding-bottom: 1em;
 	color: var(--gray);
 	background-color: var(--white);
 }
@@ -78,4 +78,26 @@ address {
 	font-size: 13px;
 	color: #5c5c5c;
 	font-weight: 700;
+}
+
+@media print, screen and (min-width: 47.5em) {
+	.footer__container {
+		padding-left: 260px;
+		background: var(--white);
+	}
+	.footer-text {
+		display: flex;
+		justify-content: space-around;
+		margin-bottom: 0;
+	}
+
+	.footer-text address {
+		margin-bottom: 0;
+		flex-basis: 33%;
+	}
+
+	.footer-flex {
+		display: flex;
+		justify-content: space-between;
+	}
 }

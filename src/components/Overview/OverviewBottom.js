@@ -41,6 +41,7 @@ const OverviewBottom = () => {
 				team as we provide the backbone for millions of businesses throughout
 				the US.
 			</p>
+			<p>&nbsp;</p>
 		</div>
 	);
 };
