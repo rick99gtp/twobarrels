@@ -41,7 +41,7 @@
 	color: var(--gray);
 }
 
-label {
+.contactus__container label {
 	font-weight: 400;
 	font-size: 14px;
 	margin-bottom: 5px;

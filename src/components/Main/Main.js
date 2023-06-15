@@ -19,6 +19,7 @@ import HowToGetAJobHere from "../HowToGetAJobHere/HowToGetAJobHere";
 import ApplyNow from "../ApplyNow/ApplyNow";
 import Benefits from "../Benefits/Benefits";
 import WhySpokane from "../WhySpokane/WhySpokane";
+import WhyAustin from "../WhyAustin/WhyAustin";
 
 const Main = ({ appWidth, setActiveMenu, activeMenu, jobSubMenusVisible }) => {
 	return (
@@ -35,6 +36,9 @@ const Main = ({ appWidth, setActiveMenu, activeMenu, jobSubMenusVisible }) => {
 				</Route>
 				<Route path="/jobs/why-spokane">
 					<WhySpokane />
+				</Route>
+				<Route path="/jobs/why-austin">
+					<WhyAustin />
 				</Route>
 				<Route path="/jobs/apply-now">
 					<ApplyNow />
