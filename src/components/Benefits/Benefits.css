@@ -1,0 +1,9 @@
+.benefits-container ul {
+	list-style-type: square;
+	padding: 0 1em;
+	margin-left: 1rem;
+}
+
+.benefits-container ul li {
+	margin-bottom: 14px;
+}

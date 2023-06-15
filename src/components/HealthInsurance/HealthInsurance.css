@@ -12,7 +12,7 @@
 	color: var(--orange);
 }
 
-a {
+.icon-list-item a {
 	font-family: "Lato", sans-serif;
 	color: var(--turquoise);
 	font-weight: 400;

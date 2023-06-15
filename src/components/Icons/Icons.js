@@ -1,5 +1,5 @@
 import "./Icons.css";
-import Icon from "./Icon";
+import Icon from "../Icon/Icon";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const Icons = ({ appWidth, setActiveMenu }) => {

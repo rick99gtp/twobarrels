@@ -1,10 +1,10 @@
 import "./Header.css";
-import Logo from "./Logo";
-import Menu from "./Menu";
+import Logo from "../Logo/Logo";
+import Menu from "../Menu/Menu";
 import BodyOverlay from "./BodyOverlay";
-import MobileMenuTrigger from "./MobileMenuTrigger";
-import background from "../assets/tboverlay4.png";
-import ExitMobile from "./ExitMobile";
+import MobileMenuTrigger from "../MobileMenuTrigger/MobileMenuTrigger";
+import background from "../../assets/tboverlay4.png";
+import ExitMobile from "../ExitMobile/ExitMobile";
 
 const Header = ({
 	activeMenu,

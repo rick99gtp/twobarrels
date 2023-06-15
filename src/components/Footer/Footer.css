@@ -1,14 +1,14 @@
 .footer__container {
 	text-align: center;
 	display: block;
-	background: #fff !important;
-	background: url("../assets/raptor.png");
+	background: url("../../assets/raptor.png");
 	background-repeat: no-repeat;
 	background-position: bottom right;
 	background-size: 70px;
 	padding-top: 1em;
 	padding-bottom: 2.5em;
 	color: var(--gray);
+	background-color: var(--white);
 }
 
 .footer__container p {

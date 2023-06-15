@@ -1,6 +1,7 @@
 import "./App.css";
-import Header from "./components/Header";
-import Main from "./components/Main";
+import Header from "./components/Header/Header";
+import Main from "./components/Main/Main";
+import Footer from "./components/Footer/Footer";
 import { useEffect, useState } from "react";
 import { BrowserRouter as Router } from "react-router-dom";
 import { library } from "@fortawesome/fontawesome-svg-core";
@@ -64,9 +65,11 @@ function App() {
 				<Main
 					appWidth={width}
 					setActiveMenu={setActiveMenu}
+					activeMenu={activeMenu}
 					jobSubMenusVisible={jobSubMenusVisible}
 					setJobSubMenusVisible={setJobSubMenusVisible}
 				/>
+				<Footer />
 			</Router>
 		</div>
 	);

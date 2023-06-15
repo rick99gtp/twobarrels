@@ -8,12 +8,11 @@ const Menu = ({
 	menuOpen,
 	changeMenuOpen,
 	setJobSubMenusVisible,
-	jobSubMenusVisible,
 }) => {
 	const hideMenu = (page) => {
 		changeMenuOpen();
 		setActiveMenu(page);
-		setJobSubMenusVisible(page === "jobs");
+		setJobSubMenusVisible(page.substring(0, 4) === "jobs");
 	};
 
 	const menuOptions = [
@@ -86,13 +85,7 @@ const Menu = ({
 				<ul>
 					{menuOptions.map((option, index) => {
 						return (
-							<li
-								style={{
-									backgroundColor: `${
-										activeMenu === option.link ? "#003454" : ""
-									}`,
-								}}
-							>
+							<li>
 								<Link
 									to={`/${option.link}`}
 									onClick={() => hideMenu(option.link)}
@@ -112,55 +105,56 @@ const Menu = ({
 										className={activeMenu === option.link ? "active-menu" : ""}
 									>
 										{option.name}
-										{/* Display jobs sub menus if Jobs is the active menu */}
-										<ul
-											style={{
-												display: activeMenu === "jobs" ? "block" : "none",
-											}}
-										>
-											{option.submenus.length > 0 &&
-												option.submenus.map((menu) => {
-													return (
-														<li
+									</span>
+									{/* Display jobs sub menus if Jobs is the active menu */}
+								</Link>
+								<ul
+									style={{
+										display:
+											activeMenu.substring(0, 4) === "jobs" ? "block" : "none",
+									}}
+									className="sub-menu"
+								>
+									{option.submenus.length > 0 &&
+										option.submenus.map((menu) => {
+											return (
+												<li
+													style={{
+														color: `${
+															activeMenu === menu.link ? "#003454" : ""
+														}`,
+														paddingLeft: 0,
+													}}
+												>
+													<Link
+														to={`/${menu.link}`}
+														onClick={() => hideMenu(menu.link)}
+													>
+														<FontAwesomeIcon
+															icon={menu.icon}
 															style={{
-																backgroundColor: `${
-																	activeMenu === menu.link ? "#003454" : ""
+																fontSize: "10px",
+																top: "3px",
+																position: "relative",
+																color: `${
+																	activeMenu === menu.link
+																		? "var(--orange)"
+																		: ""
 																}`,
 															}}
+														/>
+														<span
+															className={
+																activeMenu === menu.link ? "active-menu" : ""
+															}
 														>
-															<Link
-																to={`/${menu.link}`}
-																onClick={() => hideMenu(menu.link)}
-															>
-																<FontAwesomeIcon
-																	icon={menu.icon}
-																	style={{
-																		fontSize: "10px",
-																		top: "3px",
-																		position: "relative",
-																		color: `${
-																			activeMenu === menu.link
-																				? "var(--orange)"
-																				: ""
-																		}`,
-																	}}
-																/>
-																<span
-																	className={
-																		activeMenu === option.link
-																			? "active-menu"
-																			: ""
-																	}
-																>
-																	{menu.name}
-																</span>
-															</Link>
-														</li>
-													);
-												})}
-										</ul>
-									</span>
-								</Link>
+															{menu.name}
+														</span>
+													</Link>
+												</li>
+											);
+										})}
+								</ul>
 							</li>
 						);
 					})}

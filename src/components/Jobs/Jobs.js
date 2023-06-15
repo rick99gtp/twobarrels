@@ -1,6 +1,6 @@
 import "./Jobs.css";
 import JobPost from "./JobPost";
-import PositionsLower from "./PositionsLower";
+import PositionsLower from "../PositionsLower/PositionsLower";
 import JobList from "./JobList";
 import {
 	lookingForManagement,

@@ -1,0 +1,30 @@
+h6 {
+	text-align: center;
+	font-weight: 400;
+	font-family: "Raleway", sans-serif;
+	color: var(--gray);
+	font-size: 1rem;
+	line-height: 1.4;
+	margin-top: 0;
+	margin-bottom: 0.5rem;
+	font-style: normal;
+}
+
+h6 a {
+	background-color: var(--orange);
+	border: none;
+	display: inline-block;
+	color: var(--white);
+	border-radius: 3px;
+	padding: 0.75em 1.5em;
+	font-weight: 700;
+	text-transform: uppercase;
+	transition: all 0.25s;
+	margin-top: 0.5em;
+	margin-bottom: 1em;
+	font-size: 20px;
+	font-family: "Lato", sans-serif;
+	line-height: inherit;
+	text-decoration: none;
+	cursor: pointer;
+}
