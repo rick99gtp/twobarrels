@@ -21,7 +21,12 @@ import Benefits from "../Benefits/Benefits";
 import WhySpokane from "../WhySpokane/WhySpokane";
 import WhyAustin from "../WhyAustin/WhyAustin";
 
-const Main = ({ appWidth, setActiveMenu, activeMenu, jobSubMenusVisible }) => {
+const Main = ({
+	appWidth,
+	setActiveMenu,
+	activeMenu,
+	setJobSubMenusVisible,
+}) => {
 	return (
 		<div className="main">
 			<Switch>
@@ -113,7 +118,10 @@ const Main = ({ appWidth, setActiveMenu, activeMenu, jobSubMenusVisible }) => {
 					<JobDetail jobTitle="junior-graphic-designer" />
 				</Route>
 				<Route path="/jobs">
-					<Jobs jobSubMenusVisible={jobSubMenusVisible} />
+					<Jobs
+						setJobSubMenusVisible={setJobSubMenusVisible}
+						setActiveMenu={setActiveMenu}
+					/>
 				</Route>
 				<Route path="/contactus">
 					<ContactUs />

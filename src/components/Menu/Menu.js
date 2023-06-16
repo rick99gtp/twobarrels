@@ -1,6 +1,7 @@
 import "./Menu.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Link } from "react-router-dom";
+import { useEffect } from "react";
 
 const Menu = ({
 	activeMenu,
@@ -78,6 +79,10 @@ const Menu = ({
 			submenus: [],
 		},
 	];
+
+	useEffect(() => {
+		console.log("activeMenu:", activeMenu);
+	}, []);
 
 	return (
 		<div className={`menu ${menuOpen ? "show-mobile-nav" : ""}`}>

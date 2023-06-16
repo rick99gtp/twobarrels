@@ -10,10 +10,12 @@ import {
 } from "./LookingForJobsList";
 import { useEffect } from "react";
 
-const Jobs = () => {
+const Jobs = ({ setJobSubMenusVisible, setActiveMenu }) => {
 	useEffect(() => {
 		document.title =
 			"Software Engineering and Web Development Jobs in Spokane, WA";
+		setJobSubMenusVisible(true);
+		setActiveMenu("jobs");
 	}, []);
 	return (
 		<div className="jobs__container row">
