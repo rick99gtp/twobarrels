@@ -86,7 +86,7 @@ ul.sub-menu li a span {
 @media print, screen and (min-width: 47.5em) {
 	.header nav {
 		border-right: none;
-		position: static;
+		/* position: static; */
 		height: initial;
 		padding: 0;
 		box-shadow: none;
@@ -94,7 +94,7 @@ ul.sub-menu li a span {
 	}
 
 	.menu {
-		/* left: 0; */
+		background: transparent;
 		position: static;
 		width: auto;
 		border: 0;
