@@ -25,7 +25,7 @@ const WhoWeAre = () => {
 				<hr />
 				<p>&nbsp;</p>
 				<p>&nbsp;</p>
-				{staff}
+				<div className="staff">{staff}</div>
 			</div>
 		</div>
 	);

@@ -9,7 +9,6 @@
 
 .person-container {
 	position: relative;
-	overflow: hidden;
 	margin-bottom: 30px;
 }
 
@@ -40,23 +39,73 @@
 	line-height: 1.6;
 }
 
+.inner-div {
+	position: relative;
+}
+
 .inner-div img {
 	transition: all 0.5s;
 	max-width: 100%;
 	height: auto;
+	display: inline-block;
+}
+
+.person-container .inner-div-text {
+	transition: all 0.25s;
 }
 
 .inner-div-text h5 {
+	position: absolute;
+	left: 0;
+	bottom: 0;
 	font-size: 28px;
 	font-weight: 400;
 	text-transform: uppercase;
 	letter-spacing: 2px;
-	position: absolute;
-	left: 0;
-	bottom: 0;
 	padding: 0 20px;
 	color: #fff;
 	transition: all 0.5s;
 	background: var(--orange);
 	width: 100%;
+	display: block;
+}
+
+@media print, screen and (min-width: 62.5em) {
+	.staff {
+		margin: 0 auto;
+		display: flex;
+		flex-wrap: wrap;
+		gap: 10px;
+		max-width: 1000px;
+	}
+	.person-container {
+		flex-basis: 300px;
+		overflow: hidden;
+		margin-bottom: 0;
+	}
+
+	.person-container .inner-div img {
+		object-fit: cover;
+		max-width: 100%;
+		height: auto;
+		vertical-align: middle;
+	}
+
+	.person-container .inner-div img:hover ~ .inner-div-text,
+	.inner-div-text:hover {
+		opacity: 1;
+	}
+
+	.person-container .inner-div img:hover ~ .inner-div-text h5,
+	.inner-div-text:hover h5 {
+		bottom: 0px;
+	}
+
+	.inner-div-text {
+		opacity: 0;
+	}
+
+	.person-container h5 {
+		bottom: -100%;
+	}
 }

@@ -23,7 +23,7 @@ const Header = ({
 				setActiveMenu={setActiveMenu}
 				menuOpen={menuOpen}
 				activePage={activePage}
-				changeMenuOpen={changeMenuOpen}
+				changeMenuOpen={appWidth < 768 ? changeMenuOpen : null}
 				setJobSubMenusVisible={setJobSubMenusVisible}
 			/>
 			{appWidth < 768 ? (

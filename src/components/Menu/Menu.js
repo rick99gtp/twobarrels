@@ -11,7 +11,9 @@ const Menu = ({
 	setJobSubMenusVisible,
 }) => {
 	const hideMenu = (page) => {
-		changeMenuOpen();
+		if (changeMenuOpen) {
+			changeMenuOpen();
+		}
 		setActiveMenu(page);
 		setJobSubMenusVisible(page.substring(0, 4) === "jobs");
 	};
