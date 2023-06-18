@@ -152,3 +152,9 @@ strong {
 		padding-left: 260px;
 	}
 }
+
+@media print, screen and (min-width: 62.5em) {
+	.App .main h1 {
+		font-size: 3rem;
+	}
+}

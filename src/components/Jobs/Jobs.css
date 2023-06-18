@@ -1,50 +1,64 @@
 .jobs__container {
-    background: var(--light-gray);
-    padding: 4em 1em;
+	background: var(--light-gray);
+	padding: 4em 1em;
 }
 
 .jobs__container h1 {
-    text-align: center;
-    font-size: 2rem;
-    padding-top: 1rem;
-    font-weight: 900;
-    font-family: 'Raleway', sans-serif;
-    color: var(--gray);
-    margin-bottom: .5rem;
-    line-height: 1.4;
+	text-align: center;
+	font-size: 2rem;
+	padding-top: 1rem;
+	font-weight: 900;
+	font-family: "Raleway", sans-serif;
+	color: var(--gray);
+	margin-bottom: 0.5rem;
+	line-height: 1.4;
 }
 
 .jobs__container hr {
-    width: 100px;
-    border-bottom: 5px solid var(--orange);
-    margin: 1.25rem auto;
-    margin-bottom: 3em;
-    max-width: 75rem;
-    height: 0;
-    border-top: 0;
-    border-right: 0;
-    border-left: 0;
+	width: 100px;
+	border-bottom: 5px solid var(--orange);
+	margin: 1.25rem auto;
+	margin-bottom: 3em;
+	max-width: 75rem;
+	height: 0;
+	border-top: 0;
+	border-right: 0;
+	border-left: 0;
 }
 
 .jobs__container h4 {
-    font-weight: 400;
-    font-family: 'Raleway', sans-serif;
-    color: var(--gray);
-    font-size: 1.125rem;
-    line-height: 1.4;
-    margin-top: 0;
-    margin-bottom: .5rem;
-    text-rendering: optimizeLegibility;
+	font-weight: 400;
+	font-family: "Raleway", sans-serif;
+	color: var(--gray);
+	font-size: 1.125rem;
+	line-height: 1.4;
+	margin-top: 0;
+	margin-bottom: 0.5rem;
+	text-rendering: optimizeLegibility;
 }
 
-.positions-upper, .positions-lower {
-    margin-bottom: 40px;
+.positions-upper,
+.positions-lower {
+	margin-bottom: 40px;
 }
 
 .positions-lower {
-    background: #fff;
-    box-shadow: 0 5px 7px rgb(0, 0, 0, .13);
-    padding: 25px;
-    border-radius: 4px;
+	background: #fff;
+	box-shadow: 0 5px 7px rgb(0, 0, 0, 0.13);
+	padding: 25px;
+	border-radius: 4px;
 }
 
+@media print, screen and (min-width: 47.5em) {
+	.positions-upper.row h4 {
+		font-size: 1.5625rem;
+	}
+
+	.position__container {
+		cursor: pointer;
+	}
+
+	.position__container:hover {
+		background: #fafafa;
+	}
+}

@@ -10,7 +10,7 @@ import {
 } from "./LookingForJobsList";
 import { useEffect } from "react";
 
-const Jobs = ({ setJobSubMenusVisible, setActiveMenu }) => {
+const Jobs = ({ setJobSubMenusVisible, setActiveMenu, appWidth }) => {
 	useEffect(() => {
 		document.title =
 			"Software Engineering and Web Development Jobs in Spokane, WA";
@@ -18,10 +18,10 @@ const Jobs = ({ setJobSubMenusVisible, setActiveMenu }) => {
 		setActiveMenu("jobs");
 	}, []);
 	return (
-		<div className="jobs__container row">
+		<div className="jobs__container">
 			<h1>Jobs</h1>
 			<hr />
-			<section className="positions-upper">
+			<section className="positions-upper row">
 				<h4>Our Current Top Priority</h4>
 				{JobList.map((job) => {
 					return (
@@ -35,70 +35,71 @@ const Jobs = ({ setJobSubMenusVisible, setActiveMenu }) => {
 							note={job.note}
 							route={job.route}
 							worktype={job.workType}
+							appWidth={appWidth}
 						/>
 					);
 				})}
-			</section>
 
-			<h4>Always Looking for Great Talent</h4>
-			<section className="positions-lower">
-				<PositionsLower title="Management">
-					{lookingForManagement.map((job, index) => {
-						return (
-							<li key={index}>
-								<p style={{ margin: 0 }}>
-									{job.title.map((title) => {
-										return <p style={{ margin: 0 }}>{title}</p>;
-									})}
-								</p>
-								<span>{job.location}</span>
-							</li>
-						);
-					})}
-				</PositionsLower>
-				<PositionsLower title="Software">
-					{lookingForSoftware.map((job, index) => {
-						return (
-							<li key={index}>
-								<p style={{ margin: 0 }}>
-									{job.title.map((title) => {
-										return <p style={{ margin: 0 }}>{title}</p>;
-									})}
-								</p>
-								<span>{job.location}</span>
-							</li>
-						);
-					})}
-				</PositionsLower>
+				<h4 className="row">Always Looking for Great Talent</h4>
+				<section className="positions-lower row">
+					<PositionsLower title="Management">
+						{lookingForManagement.map((job, index) => {
+							return (
+								<li key={index}>
+									<p style={{ margin: 0 }}>
+										{job.title.map((title) => {
+											return <p style={{ margin: 0 }}>{title}</p>;
+										})}
+									</p>
+									<span>{job.location}</span>
+								</li>
+							);
+						})}
+					</PositionsLower>
+					<PositionsLower title="Software">
+						{lookingForSoftware.map((job, index) => {
+							return (
+								<li key={index}>
+									<p style={{ margin: 0 }}>
+										{job.title.map((title) => {
+											return <p style={{ margin: 0 }}>{title}</p>;
+										})}
+									</p>
+									<span>{job.location}</span>
+								</li>
+							);
+						})}
+					</PositionsLower>
 
-				<PositionsLower title="Systems">
-					{lookingForSystems.map((job, index) => {
-						return (
-							<li key={index}>
-								<p style={{ margin: 0 }}>
-									{job.title.map((title) => {
-										return <p style={{ margin: 0 }}>{title}</p>;
-									})}
-								</p>
-								<span>{job.location}</span>
-							</li>
-						);
-					})}
-				</PositionsLower>
-				<PositionsLower title="Digital">
-					{lookingForDigital.map((job, index) => {
-						return (
-							<li key={index}>
-								<p style={{ margin: 0 }}>
-									{job.title.map((title) => {
-										return <p style={{ margin: 0 }}>{title}</p>;
-									})}
-								</p>
-								<span>{job.location}</span>
-							</li>
-						);
-					})}
-				</PositionsLower>
+					<PositionsLower title="Systems">
+						{lookingForSystems.map((job, index) => {
+							return (
+								<li key={index}>
+									<p style={{ margin: 0 }}>
+										{job.title.map((title) => {
+											return <p style={{ margin: 0 }}>{title}</p>;
+										})}
+									</p>
+									<span>{job.location}</span>
+								</li>
+							);
+						})}
+					</PositionsLower>
+					<PositionsLower title="Digital">
+						{lookingForDigital.map((job, index) => {
+							return (
+								<li key={index}>
+									<p style={{ margin: 0 }}>
+										{job.title.map((title) => {
+											return <p style={{ margin: 0 }}>{title}</p>;
+										})}
+									</p>
+									<span>{job.location}</span>
+								</li>
+							);
+						})}
+					</PositionsLower>
+				</section>
 			</section>
 		</div>
 	);

@@ -121,6 +121,7 @@ const Main = ({
 					<Jobs
 						setJobSubMenusVisible={setJobSubMenusVisible}
 						setActiveMenu={setActiveMenu}
+						appWidth={appWidth}
 					/>
 				</Route>
 				<Route path="/contactus">

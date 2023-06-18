@@ -25,10 +25,6 @@
 	list-style: none;
 	transition: all 0.5s ease;
 	overflow: hidden;
-	/* transform-origin: top; */
-	/* transform: scaleY(0); */
-	/* max-height: 0; */
-	/* height: 0; */
 	max-height: 0;
 }
 
@@ -54,4 +50,18 @@
 .show-ul {
 	/* height: 100%; */
 	max-height: 100vh;
+}
+
+h3.lower-title {
+	font-size: 20px;
+	border-bottom: 1px solid #dedede;
+	padding: 10px 50px 10px 10px;
+	margin: 0;
+	cursor: pointer;
+	color: #035;
+	font-weight: 400;
+	font-family: "Raleway", sans-serif;
+	line-height: 1.4;
+	font-style: normal;
+	text-rendering: optimizeLegibility;
 }

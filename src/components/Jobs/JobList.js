@@ -9,7 +9,7 @@ const jobList = [
 	{
 		title: "Senior PHP Developer",
 		priority: true,
-		location: "Remote | Spokane - Austin - SLC",
+		location: "Remote | Spokane - Austin - SLC - ",
 		workType: "Full Time",
 		salary: "$160,000/year",
 		icon: faCode,
@@ -19,7 +19,7 @@ const jobList = [
 	{
 		title: "Senior Software Engineer (Ruby on Rails)",
 		priority: true,
-		location: "Remote | Spokane - Austin - SLC",
+		location: "Remote | Spokane - Austin - SLC - ",
 		workType: "Full Time",
 		salary: "$185,000/year",
 		icon: faCode,
@@ -29,7 +29,7 @@ const jobList = [
 	{
 		title: "Information Security Director",
 		priority: true,
-		location: "Remote | Spokane - Austin - SLC",
+		location: "Remote | Spokane - Austin - SLC - ",
 		workType: "Full Time",
 		salary: "$200,000/year",
 		icon: faUsers,
@@ -39,7 +39,7 @@ const jobList = [
 	{
 		title: "VOIP Business Manager",
 		priority: true,
-		location: "Remote | Spokane - Austin - SLC",
+		location: "Remote | Spokane - Austin - SLC - ",
 		workType: "Full Time",
 		salary: "$200,000/year",
 		icon: faCode,
@@ -49,7 +49,7 @@ const jobList = [
 	{
 		title: "Product Manager",
 		priority: true,
-		location: "Remote | Spokane - Austin - SLC",
+		location: "Remote | Spokane - Austin - SLC - ",
 		workType: "Full Time",
 		salary: "$65,000 - $120,000/year DOE",
 		icon: faCode,
@@ -59,7 +59,7 @@ const jobList = [
 	{
 		title: "Senior Software Engineer - VoIP",
 		priority: false,
-		location: "Spokane, WA | Austin, TX | Sale Lake, UT",
+		location: "Spokane, WA | Austin, TX | Sale Lake, UT - ",
 		workType: "Remote - Full Time",
 		salary: "$185,000/year",
 		icon: faCode,
@@ -69,7 +69,7 @@ const jobList = [
 	{
 		title: "Senior Backend Developer",
 		priority: false,
-		location: "Remote | Spokane - Austin - SLC",
+		location: "Remote | Spokane - Austin - SLC - ",
 		workType: "Full Time",
 		salary: "$185,000/year",
 		icon: faCode,
@@ -79,7 +79,7 @@ const jobList = [
 	{
 		title: "Senior Data Engineer",
 		priority: false,
-		location: "Remote | Spokane - Austin - SLC",
+		location: "Remote | Spokane - Austin - SLC - ",
 		workType: "Full Time",
 		salary: "$150,000/year",
 		icon: faCode,
@@ -89,7 +89,7 @@ const jobList = [
 	{
 		title: "Security Engineer",
 		priority: false,
-		location: "Remote | Spokane - Austin - SLC",
+		location: "Remote | Spokane - Austin - SLC - ",
 		workType: "Full Time",
 		salary: "$175,000/year",
 		icon: faCogs,
@@ -99,7 +99,7 @@ const jobList = [
 	{
 		title: "Senior Front-End Web Developer",
 		priority: false,
-		location: "Remote | Spokane - Austin - SLC",
+		location: "Remote | Spokane - Austin - SLC - ",
 		workType: "Full Time",
 		salary: "$150,000/year",
 		icon: faPencilAlt,
@@ -109,7 +109,7 @@ const jobList = [
 	{
 		title: "Senior DevOps Engineer",
 		priority: false,
-		location: "Remote | Spokane - Austin - SLC",
+		location: "Remote | Spokane - Austin - SLC - ",
 		workType: "Full Time",
 		salary: "$140,000 - $170,000/year",
 		icon: faCode,
@@ -119,7 +119,7 @@ const jobList = [
 	{
 		title: "Director of Software Engineering",
 		priority: false,
-		location: "Spokane WA, Austin TX, Salt Lake UT vicinity preferred",
+		location: "Spokane WA, Austin TX, Salt Lake UT vicinity preferred - ",
 		workType: "Full Time",
 		salary: "$200,000/year",
 		icon: faUsers,
@@ -129,7 +129,7 @@ const jobList = [
 	{
 		title: "Chief Marketing Officer",
 		priority: false,
-		location: "Spokane - Austin - Salt Lake City",
+		location: "Spokane - Austin - Salt Lake City - ",
 		workType: "Full Time",
 		salary: "Up to $350,000/year DOE",
 		icon: faUsers,
@@ -139,7 +139,7 @@ const jobList = [
 	{
 		title: "Junior Graphic Designer",
 		priority: false,
-		location: "Spokane, WA",
+		location: "Spokane, WA - ",
 		workType: "Full Time",
 		salary: "$55,000 - $60,000/year",
 		icon: faPencilAlt,

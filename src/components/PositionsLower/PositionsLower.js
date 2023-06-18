@@ -20,7 +20,7 @@ const PositionsLower = (props) => {
 				className={`position-item ${ulVisible && "dropdown-active"}`}
 				onClick={() => setUlVisible(!ulVisible)}
 			>
-				<h4>{props.title}</h4>
+				<h3 className="lower-title">{props.title}</h3>
 				<FontAwesomeIcon icon={activeIcon} className="fa-position" />
 			</div>
 			<ul className={`career-ul ${ulVisible ? "show-ul" : ""}`}>
