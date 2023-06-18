@@ -11,6 +11,7 @@
 	margin-top: 1rem;
 	margin-bottom: 0.5rem;
 	font-size: 2rem;
+	line-height: 1.4;
 }
 
 .apply-now .input-group {
@@ -50,7 +51,7 @@
 
 .apply-now a:not(.checkbox-radio a) {
 	display: inline-block;
-	border: 2px solid var(--white);
+	border: 2px solid var(--turquoise);
 	border-radius: 3px;
 	padding: 0.75em 1.5em;
 	font-weight: 700;
@@ -115,4 +116,74 @@
 
 .apply-now .full-group.text-center {
 	text-align: center;
+}
+
+.apply-now select {
+	padding: 0.5em;
+}
+
+@media print, screen and (min-width: 47.5em) {
+	.apply-now {
+		max-width: 600px;
+	}
+	.name-group,
+	.link-group,
+	.projects-group {
+		display: flex;
+	}
+
+	.group-half {
+		flex: 1;
+	}
+
+	.input-group.first:not(.select):not(.linked-in),
+	.label-group.first:not(.select):not(.linked-in) {
+		padding-right: 0.5em;
+	}
+
+	.input-group.last,
+	.label-group.last {
+		padding-left: 0.5em;
+	}
+
+	.label-group {
+		font-size: 14px;
+		font-weight: 400;
+	}
+
+	input[type="file"] {
+		width: 100%;
+	}
+
+	.apply-now input#email,
+	.apply-now input#phone {
+		width: 100%;
+	}
+
+	.apply-now input#linkedin-link {
+		width: 50%;
+	}
+
+	.input-group.first.linked-in {
+		margin-right: 1em;
+	}
+
+	.apply-now form h4 {
+		margin: 1.25rem 0 0;
+		font-weight: 400;
+		color: #363636;
+		font-size: 1.5625rem;
+		line-height: 1.4;
+		font-family: Raleway, sans-serif;
+	}
+
+	.apply-now textarea#project-details {
+		height: initial;
+	}
+
+	.apply-now a.add-project:hover {
+		text-decoration: none;
+		background-color: var(--turquoise);
+		color: #fff;
+	}
 }

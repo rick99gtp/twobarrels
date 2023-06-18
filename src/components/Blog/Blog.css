@@ -37,7 +37,7 @@
 	color: var(--gray);
 }
 
-a span {
+.blog__container a span {
 	font-weight: 400;
 }
 
@@ -47,7 +47,7 @@ a span {
 	font-weight: 300;
 }
 
-div.blog__container .post-details span {
+blog__container .post-details span {
 	color: #999;
 	font-size: 0.875rem;
 }

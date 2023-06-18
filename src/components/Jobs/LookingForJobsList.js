@@ -21,7 +21,7 @@ export const lookingForManagement = [
 			"Security Officer / Executive Information",
 			"Security Officer",
 		],
-		location: "Spokane, WA",
+		location: "Spokane – Austin – Salt Lake City",
 	},
 	{
 		title: ["Director of Front End Development"],

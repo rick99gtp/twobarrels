@@ -82,7 +82,7 @@ const HowWeWork = () => {
 						</li>
 					</ul>
 					<hr />
-					<h2>
+					<h2 className="test">
 						How We Manage Hot Fixes, Bugs, and Quality of Life Improvements
 					</h2>
 					<p>

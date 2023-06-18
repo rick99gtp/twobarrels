@@ -81,7 +81,14 @@
 		align-items: center;
 		margin: 0;
 	}
+
 	.job-post__container:hover {
 		box-shadow: 0 7px 12px rgba(0, 0, 0, 0.2);
+	}
+
+	.job-post__container a:hover {
+		background: #d5500d;
+		color: #fff;
+		box-shadow: none;
 	}
 }

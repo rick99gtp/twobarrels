@@ -17,3 +17,9 @@ ul.benefits-list .icon-list-item p {
 	padding-left: 30px;
 	margin-bottom: 0;
 }
+
+@media print, screen and (min-width: 46.5em) {
+	.icon-list-item:hover a {
+		text-decoration: underline;
+	}
+}

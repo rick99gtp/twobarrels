@@ -70,3 +70,17 @@ h3.lower-title {
 .position__container:last-of-type {
 	border-bottom: none;
 }
+
+@media print, screen and (min-width: 47.5em) {
+	ul.career-ul li {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	ul.career-ul li p {
+		font-size: 14px;
+		font-family: "Lato", sans-serif;
+		color: #035;
+		font-weight: 400;
+	}
+}

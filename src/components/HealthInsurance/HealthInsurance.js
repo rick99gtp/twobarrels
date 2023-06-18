@@ -12,89 +12,91 @@ const HealthInsurance = () => {
 		document.title = "Health Insurance";
 	}, []);
 	return (
-		<div className="job-detail-container">
-			<h1 className="job-details-title">Health Insurance</h1>
-			<p>
-				Two Barrels is proud to offer its employees 100% employer-paid medical,
-				dental and vision insurance through Blue Cross of Idaho. There is a 60
-				day waiting period for new employees, and coverage begins the first of
-				the month following the end of the waiting period.
-			</p>
-			<p>Read through the following items if you’d like to learn more:</p>
-			<div class="icon-list-item">
-				<FontAwesomeIcon
-					style={{ fontSize: "30px", position: "absolute", left: "10px" }}
-					icon={faMedkit}
-				/>
+		<div className="outer-container">
+			<div className="job-detail-container">
+				<h1 className="job-details-title">Health Insurance</h1>
 				<p>
-					<a
-						href="https://www.twobarrels.com/wp-content/uploads/2022/11/2023-2B-High-Level-Healthcare-Summary.pdf"
-						target="_blank"
-						rel="noopener"
-					>
-						Insurance Plan High Level Summary
-					</a>
+					Two Barrels is proud to offer its employees 100% employer-paid
+					medical, dental and vision insurance through Blue Cross of Idaho.
+					There is a 60 day waiting period for new employees, and coverage
+					begins the first of the month following the end of the waiting period.
 				</p>
-			</div>
-			<div class="icon-list-item">
-				<FontAwesomeIcon
-					style={{ fontSize: "30px", position: "absolute", left: "10px" }}
-					icon={faBuilding}
-				/>
-				<p>
-					<a
-						href="http://www.twobarrels.com/wp-content/uploads/2021/12/2B-2022-SBC-PPO-1500.pdf"
-						target="_blank"
-						rel="noopener"
-					>
-						Premera Blue Cross Summary Plan $1,500 Deductible
-					</a>
-				</p>
-			</div>
-			<div class="icon-list-item">
-				<FontAwesomeIcon
-					style={{ fontSize: "30px", position: "absolute", left: "10px" }}
-					icon={faBuilding}
-				/>
-				<p>
-					<a
-						href="http://www.twobarrels.com/wp-content/uploads/2021/12/2B-2022-SBC-PPO-4000.pdf"
-						target="_blank"
-						rel="noopener"
-					>
-						Premera Blue Cross Summary Plan $4,000 Deductible
-					</a>
-				</p>
-			</div>
-			<div class="icon-list-item">
-				<FontAwesomeIcon
-					style={{ fontSize: "30px", position: "absolute", left: "10px" }}
-					icon={faBuilding}
-				/>
-				<p>
-					<a
-						href="http://www.twobarrels.com/wp-content/uploads/2021/12/2B-2022-SBC-PPO-4000-HSA.pdf"
-						target="_blank"
-						rel="noopener"
-					>
-						Premera Blue Cross Summary HSA Plan $4,000 Deductible
-					</a>
-				</p>
-			</div>
-			<div class="icon-list-item">
-				<FontAwesomeIcon
-					style={{ fontSize: "30px", position: "absolute", left: "10px" }}
-					icon={faFile}
-				/>
-				<p>
-					<a
-						href="http://www.twobarrels.com/wp-content/uploads/2017/06/SBC-uniform-glossary-final.pdf.pdf"
-						target="_blank"
-						rel="noopener"
-					>
-						Glossary of Health Coverage &amp; Medical Terms
-					</a>
-				</p>
+				<p>Read through the following items if you’d like to learn more:</p>
+				<div class="icon-list-item">
+					<FontAwesomeIcon
+						style={{ fontSize: "30px", position: "absolute", left: "10px" }}
+						icon={faMedkit}
+					/>
+					<p>
+						<a
+							href="https://www.twobarrels.com/wp-content/uploads/2022/11/2023-2B-High-Level-Healthcare-Summary.pdf"
+							target="_blank"
+							rel="noopener"
+						>
+							Insurance Plan High Level Summary
+						</a>
+					</p>
+				</div>
+				<div class="icon-list-item">
+					<FontAwesomeIcon
+						style={{ fontSize: "30px", position: "absolute", left: "10px" }}
+						icon={faBuilding}
+					/>
+					<p>
+						<a
+							href="http://www.twobarrels.com/wp-content/uploads/2021/12/2B-2022-SBC-PPO-1500.pdf"
+							target="_blank"
+							rel="noopener"
+						>
+							Premera Blue Cross Summary Plan $1,500 Deductible
+						</a>
+					</p>
+				</div>
+				<div class="icon-list-item">
+					<FontAwesomeIcon
+						style={{ fontSize: "30px", position: "absolute", left: "10px" }}
+						icon={faBuilding}
+					/>
+					<p>
+						<a
+							href="http://www.twobarrels.com/wp-content/uploads/2021/12/2B-2022-SBC-PPO-4000.pdf"
+							target="_blank"
+							rel="noopener"
+						>
+							Premera Blue Cross Summary Plan $4,000 Deductible
+						</a>
+					</p>
+				</div>
+				<div class="icon-list-item">
+					<FontAwesomeIcon
+						style={{ fontSize: "30px", position: "absolute", left: "10px" }}
+						icon={faBuilding}
+					/>
+					<p>
+						<a
+							href="http://www.twobarrels.com/wp-content/uploads/2021/12/2B-2022-SBC-PPO-4000-HSA.pdf"
+							target="_blank"
+							rel="noopener"
+						>
+							Premera Blue Cross Summary HSA Plan $4,000 Deductible
+						</a>
+					</p>
+				</div>
+				<div class="icon-list-item">
+					<FontAwesomeIcon
+						style={{ fontSize: "30px", position: "absolute", left: "10px" }}
+						icon={faFile}
+					/>
+					<p>
+						<a
+							href="http://www.twobarrels.com/wp-content/uploads/2017/06/SBC-uniform-glossary-final.pdf.pdf"
+							target="_blank"
+							rel="noopener"
+						>
+							Glossary of Health Coverage &amp; Medical Terms
+						</a>
+					</p>
+				</div>
 			</div>
 		</div>
 	);
