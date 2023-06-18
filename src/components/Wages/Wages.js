@@ -7,7 +7,7 @@ const Wages = () => {
 	return (
 		<div className="outer-container">
 			<div className="job-detail-container">
-				<h1 className="job-details-title">Great Wage</h1>
+				<h1 className="job-details-title">Wages</h1>
 				<p>
 					Two Barrels pays well, and we care about the people who work here,
 					which is why we conduct annual performance reviews with a raise option

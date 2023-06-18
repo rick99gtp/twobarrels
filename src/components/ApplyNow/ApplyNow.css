@@ -122,6 +122,12 @@
 	padding: 0.5em;
 }
 
+.apply-now input#email,
+.apply-now input#phone,
+.apply-now input[type="file"] {
+	width: 100%;
+}
+
 @media print, screen and (min-width: 47.5em) {
 	.apply-now {
 		max-width: 600px;

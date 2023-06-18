@@ -43,6 +43,13 @@
 	cursor: pointer;
 }
 
+.career-ul li p {
+	font-size: 14px;
+	font-family: "Lato", sans-serif;
+	font-weight: 400;
+	color: var(--turquoise);
+}
+
 .career-ul li span {
 	display: block;
 	font-size: 14px;
@@ -77,10 +84,10 @@ h3.lower-title {
 		justify-content: space-between;
 	}
 
-	ul.career-ul li p {
+	/* ul.career-ul li p {
 		font-size: 14px;
 		font-family: "Lato", sans-serif;
 		color: #035;
 		font-weight: 400;
-	}
+	} */
 }

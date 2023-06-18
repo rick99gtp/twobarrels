@@ -44,7 +44,7 @@ const Menu = ({
 				{
 					link: "jobs/how-to-get-a-job-here",
 					icon: "circle",
-					name: "How To Get A Job Here",
+					name: "How To Get A Job",
 				},
 				{
 					link: "jobs/apply-now",
