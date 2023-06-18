@@ -11,24 +11,26 @@ const Benefits = () => {
 		document.title = "What's the Freaking Benefits? | Two Barrels LLC";
 	}, []);
 	return (
-		<div className="page-container">
-			<h1 className="job-details-title">Benefits</h1>
-			<ul className="job-detail-benefits benefits-list">
-				{benefits.map((benefit) => {
-					return (
-						<li className="icon-list-item">
-							<FontAwesomeIcon icon={benefit.icon} />
-							{benefit.route !== null ? (
-								<p>
-									<Link to={`${benefit.route}`}>{benefit.text}</Link>
-								</p>
-							) : (
-								<p>{parse(benefit.text)}</p>
-							)}
-						</li>
-					);
-				})}
-			</ul>
+		<div className="outer-container">
+			<div className="page-container">
+				<h1 className="job-details-title">Benefits</h1>
+				<ul className="job-detail-benefits benefits-list">
+					{benefits.map((benefit) => {
+						return (
+							<li className="icon-list-item">
+								<FontAwesomeIcon icon={benefit.icon} />
+								{benefit.route !== null ? (
+									<p>
+										<Link to={`${benefit.route}`}>{benefit.text}</Link>
+									</p>
+								) : (
+									<p>{parse(benefit.text)}</p>
+								)}
+							</li>
+						);
+					})}
+				</ul>
+			</div>
 		</div>
 	);
 };

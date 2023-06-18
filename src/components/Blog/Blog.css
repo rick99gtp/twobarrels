@@ -28,9 +28,6 @@
 	font-family: "Raleway", sans-serif;
 }
 
-.blog__container h2.post-title {
-}
-
 .blog__container p {
 	font-family: "Lato", sans-serif;
 	font-weight: 300;
@@ -84,4 +81,36 @@ article {
 	font-weight: 400;
 	line-height: inherit;
 	font-size: 1.45rem;
+}
+
+@media print, screen and (min-width: 47.5em) {
+	.blog__container {
+		margin-top: 0;
+	}
+
+	.blog__container h2.post-title {
+		font-size: 2.5rem;
+	}
+
+	.blog__container a:hover {
+		text-decoration: underline;
+	}
+
+	.next-page,
+	.previous-page,
+	.page-number {
+		cursor: pointer;
+		font-weight: 400;
+	}
+
+	.next-page:hover,
+	.previous-page:hover,
+	.page-number:hover {
+		text-decoration: underline;
+	}
+
+	.page-number.active-page {
+		cursor: text;
+		text-decoration: none;
+	}
 }
