@@ -10,7 +10,7 @@ const Blog = () => {
 
 	useEffect(() => {
 		document.title = "Two Barrels LLC Blog | Two Barrels LLC";
-		// when the page loads, determine if pagination is required
+		// when the page loads, set the page count
 		setPageCount(Math.floor(BlogItems.length / 10) + 1);
 	}, []);
 

@@ -1,6 +1,5 @@
 import "./WantToWorkHere.css";
 import { Link } from "react-router-dom";
-// import { FaAngleRight } from 'react-icons/fa';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const WantToWorkHere = ({ setActiveMenu }) => {

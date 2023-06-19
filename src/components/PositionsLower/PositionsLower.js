@@ -2,7 +2,7 @@ import "./PositionsLower.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useState, useEffect } from "react";
 
-const PositionsLower = (props) => {
+const PositionsLower = ({ title, children }) => {
 	const [ulVisible, setUlVisible] = useState(false);
 	const [activeIcon, setActiveIcon] = useState("plus");
 
@@ -20,12 +20,10 @@ const PositionsLower = (props) => {
 				className={`position-item ${ulVisible && "dropdown-active"}`}
 				onClick={() => setUlVisible(!ulVisible)}
 			>
-				<h3 className="lower-title">{props.title}</h3>
+				<h3 className="lower-title">{title}</h3>
 				<FontAwesomeIcon icon={activeIcon} className="fa-position" />
 			</div>
-			<ul className={`career-ul ${ulVisible ? "show-ul" : ""}`}>
-				{props.children}
-			</ul>
+			<ul className={`career-ul ${ulVisible ? "show-ul" : ""}`}>{children}</ul>
 		</div>
 	);
 };

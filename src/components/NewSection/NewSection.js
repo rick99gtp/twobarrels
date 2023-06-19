@@ -1,11 +1,7 @@
-import './NewSection.css';
+import "./NewSection.css";
 
-function NewSection(props) {
-    return (
-        <div className='new-section'>
-            {props.children}
-        </div>
-    )
+function NewSection({ children }) {
+	return <div className="new-section">{children}</div>;
 }
 
 export default NewSection;

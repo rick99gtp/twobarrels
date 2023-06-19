@@ -6,10 +6,12 @@ const ContactUs = () => {
 	const isMobile = window.innerWidth <= 768;
 	const mapWidth = (window.innerWidth - 260) / 3;
 
+	// etup 2-way binding for inputs
 	const [nameValue, setNameValue] = useState("");
 	const [messageValue, setMessageValue] = useState("");
 	const [emailValue, setEmailValue] = useState("");
 
+	// retrieve the api key for maps
 	const API_KEY = process.env.REACT_APP_API_KEY;
 
 	useEffect(() => {
