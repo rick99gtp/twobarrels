@@ -99,4 +99,8 @@ ul.job-detail-benefits li a {
 		margin-top: 2rem;
 		font-size: 1.9375rem;
 	}
+
+	.outer-container {
+		padding-top: 4em;
+	}
 }

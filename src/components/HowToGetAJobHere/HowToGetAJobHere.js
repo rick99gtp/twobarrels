@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const HowToGetAJobHere = () => {
 	useEffect(() => {
-		document.title = "How We Work | Two Barrels LLC";
+		document.title = "How To Get a Job Here | Two Barrels LLC";
 	}, []);
 	return (
 		<div className="outer-container">

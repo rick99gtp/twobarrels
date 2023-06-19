@@ -3,7 +3,7 @@ import { useEffect } from "react";
 
 const WhyAustin = () => {
 	useEffect(() => {
-		document.title = "How We Work | Two Barrels LLC";
+		document.title = "Why Austin? | Two Barrels LLC";
 	}, []);
 	return (
 		<div className="outer-container">

@@ -1,7 +1,11 @@
 import "./ApplyNow.css";
+import { useEffect } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const ApplyNow = () => {
+	useEffect(() => {
+		document.title = "Apply Now | Two Barrels LLC";
+	}, []);
 	return (
 		<div className="outer-container">
 			<div className="apply-now">

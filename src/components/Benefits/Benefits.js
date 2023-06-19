@@ -1,12 +1,13 @@
 import "./Benefits.css";
 import { Link } from "react-router-dom";
 import parse from "html-react-parser";
+// Import the `benefits`
 import { benefits } from "../JobDetail/JobDetails";
 import { useEffect } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faMoneyBill } from "@fortawesome/free-solid-svg-icons";
 
 const Benefits = () => {
+	// set the document title
 	useEffect(() => {
 		document.title = "What's the Freaking Benefits? | Two Barrels LLC";
 	}, []);

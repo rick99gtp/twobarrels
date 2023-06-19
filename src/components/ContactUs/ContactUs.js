@@ -1,6 +1,6 @@
 import "./ContactUs.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 const ContactUs = () => {
 	const isMobile = window.innerWidth <= 768;
@@ -11,6 +11,10 @@ const ContactUs = () => {
 	const [emailValue, setEmailValue] = useState("");
 
 	const API_KEY = process.env.REACT_APP_API_KEY;
+
+	useEffect(() => {
+		document.title = "Contact Us | Two Barrels LLC";
+	}, []);
 
 	return (
 		<div className="outer-contactus__container">
