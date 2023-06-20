@@ -30,107 +30,107 @@ const Main = ({
 	return (
 		<div className="main">
 			<Switch>
-				<Route path="#/whoweare">
+				<Route path="/whoweare">
 					<WhoWeAre />
 				</Route>
-				<Route path="#/jobs/how-we-work">
+				<Route path="/jobs/how-we-work">
 					<HowWeWork />
 				</Route>
-				<Route path="#/jobs/how-to-get-a-job-here">
+				<Route path="/jobs/how-to-get-a-job-here">
 					<HowToGetAJobHere />
 				</Route>
-				<Route path="#/jobs/why-spokane">
+				<Route path="/jobs/why-spokane">
 					<WhySpokane />
 				</Route>
-				<Route path="#/jobs/why-austin">
+				<Route path="/jobs/why-austin">
 					<WhyAustin />
 				</Route>
-				<Route path="#/jobs/apply-now">
+				<Route path="/jobs/apply-now">
 					<ApplyNow />
 				</Route>
-				<Route path="#/jobs/benefits/wages">
+				<Route path="/jobs/benefits/wages">
 					<Wages />
 				</Route>
-				<Route path="#/jobs/benefits/wfh-comfort-package">
+				<Route path="/jobs/benefits/wfh-comfort-package">
 					<WFHComfortPackage />
 				</Route>
-				<Route path="#/jobs/benefits/pto">
+				<Route path="/jobs/benefits/pto">
 					<Pto />
 				</Route>
-				<Route path="#/jobs/benefits/retirement">
+				<Route path="/jobs/benefits/retirement">
 					<Retirement />
 				</Route>
-				<Route path="#/jobs/benefits/health-insurance">
+				<Route path="/jobs/benefits/health-insurance">
 					<HealthInsurance />
 				</Route>
-				<Route path="#/jobs/benefits/maternity-paternity-leave">
+				<Route path="/jobs/benefits/maternity-paternity-leave">
 					<MaternityPaternityLeave />
 				</Route>
-				<Route path="#/jobs/benefits/flexible-hours">
+				<Route path="/jobs/benefits/flexible-hours">
 					<FlexibleHours />
 				</Route>
-				<Route path="#/jobs/benefits/coffee">
+				<Route path="/jobs/benefits/coffee">
 					<Coffee />
 				</Route>
-				<Route path="#/jobs/benefits">
+				<Route path="/jobs/benefits">
 					<Benefits />
 				</Route>
-				<Route path="#/jobs/software/senior-php-developer">
+				<Route path="/jobs/software/senior-php-developer">
 					<JobDetail jobTitle="senior-php-developer" />
 				</Route>
-				<Route path="#/jobs/software/senior-engineer">
+				<Route path="/jobs/software/senior-engineer">
 					<JobDetail jobTitle="senior-engineer" />
 				</Route>
-				<Route path="#/jobs/information-security-director">
+				<Route path="/jobs/information-security-director">
 					<JobDetail jobTitle="information-security-director" />
 				</Route>
-				<Route path="#/jobs/management/director-of-voip">
+				<Route path="/jobs/management/director-of-voip">
 					<JobDetail jobTitle="director-of-voip" />
 				</Route>
-				<Route path="#/jobs/software/product-manager">
+				<Route path="/jobs/software/product-manager">
 					<JobDetail jobTitle="product-manager" />
 				</Route>
-				<Route path="#/jobs/software/senior-software-engineer-voip">
+				<Route path="/jobs/software/senior-software-engineer-voip">
 					<JobDetail jobTitle="senior-software-engineer-voip" />
 				</Route>
-				<Route path="#/jobs/software/senior-backend-developer">
+				<Route path="/jobs/software/senior-backend-developer">
 					<JobDetail jobTitle="senior-backend-developer" />
 				</Route>
-				<Route path="#/jobs/software/senior-data-engineer">
+				<Route path="/jobs/software/senior-data-engineer">
 					<JobDetail jobTitle="senior-data-engineer" />
 				</Route>
-				<Route path="#/jobs/systems/security-engineer">
+				<Route path="/jobs/systems/security-engineer">
 					<JobDetail jobTitle="security-engineer" />
 				</Route>
-				<Route path="#/jobs/websites/senior-front-web-developer">
+				<Route path="/jobs/websites/senior-front-web-developer">
 					<JobDetail jobTitle="senior-front-web-developer" />
 				</Route>
-				<Route path="#/jobs/software/devops-engineers">
+				<Route path="/jobs/software/devops-engineers">
 					<JobDetail jobTitle="devops-engineers" />
 				</Route>
-				<Route path="#/jobs/software/director-of-software-engineering">
+				<Route path="/jobs/software/director-of-software-engineering">
 					<JobDetail jobTitle="director-of-software-engineering" />
 				</Route>
-				<Route path="#/jobs/websites/chief-marketing-officer">
+				<Route path="/jobs/websites/chief-marketing-officer">
 					<JobDetail jobTitle="chief-marketing-officer" />
 				</Route>
-				<Route path="#/jobs/websites/junior-graphic-designer">
+				<Route path="/jobs/websites/junior-graphic-designer">
 					<JobDetail jobTitle="junior-graphic-designer" />
 				</Route>
-				<Route path="#/jobs">
+				<Route path="/jobs">
 					<Jobs
 						setJobSubMenusVisible={setJobSubMenusVisible}
 						setActiveMenu={setActiveMenu}
 						appWidth={appWidth}
 					/>
 				</Route>
-				<Route path="#/contactus">
+				<Route path="/contactus">
 					<ContactUs />
 				</Route>
-				<Route path="#/blog">
+				<Route path="/blog">
 					<Blog />
 				</Route>
-				<Route path="#/">
+				<Route path="/">
 					<Overview
 						setActiveMenu={setActiveMenu}
 						appWidth={appWidth}

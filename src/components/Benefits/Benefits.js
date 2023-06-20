@@ -22,7 +22,7 @@ const Benefits = () => {
 								<FontAwesomeIcon icon={benefit.icon} />
 								{benefit.route !== null ? (
 									<p>
-										<Link to={`#${benefit.route}`}>{benefit.text}</Link>
+										<Link to={`${benefit.route}`}>{benefit.text}</Link>
 									</p>
 								) : (
 									<p>{parse(benefit.text)}</p>

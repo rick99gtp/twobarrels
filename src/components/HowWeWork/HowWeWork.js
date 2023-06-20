@@ -287,7 +287,7 @@ const HowWeWork = () => {
 				<div>
 					<div>
 						<h6>
-							<Link to="#/jobs/apply-now">
+							<Link to="/jobs/apply-now">
 								Apply Now
 								<FontAwesomeIcon
 									className="btn-send-icon"

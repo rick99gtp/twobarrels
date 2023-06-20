@@ -9,7 +9,7 @@ const WantToWorkHere = ({ setActiveMenu }) => {
 				Want to work here? See all current openings and opportunities at Two
 				Barrels.
 			</p>
-			<Link to="#/jobs" onClick={() => setActiveMenu("jobs")}>
+			<Link to="/jobs" onClick={() => setActiveMenu("jobs")}>
 				Jobs <FontAwesomeIcon icon="angle-right" />
 			</Link>
 		</div>

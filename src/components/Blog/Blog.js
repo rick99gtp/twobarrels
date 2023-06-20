@@ -22,14 +22,14 @@ const Blog = () => {
 					return (
 						<article>
 							<h2 className="post-title">
-								<Link to={`#${item.link}`}>{parse(item.title)}</Link>
+								<Link to={`${item.link}`}>{parse(item.title)}</Link>
 							</h2>
 							<div className="post-details">
 								<span>{item.date}</span>
 							</div>
 							<p>
 								{item.text}
-								<Link className="view-article" to={`#${item.link}`}>
+								<Link className="view-article" to={`${item.link}`}>
 									{" "}
 									View Article
 								</Link>
