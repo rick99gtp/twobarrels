@@ -1,6 +1,10 @@
 const staff = {
 	personData: [
 		{
+			name: "Rick",
+			image: "https://www.rickbeyer.dev/images/hero1.jpg",
+		},
+		{
 			name: "Addie",
 			image:
 				"https://www.twobarrels.com/wp-content/uploads/2022/06/Addie-400x400.png",
