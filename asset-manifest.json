@@ -1,22 +1,22 @@
 {
   "files": {
     "main.css": "/twobarrels/static/css/main.304fd802.chunk.css",
-    "main.js": "/twobarrels/static/js/main.5b31ec4a.chunk.js",
-    "main.js.map": "/twobarrels/static/js/main.5b31ec4a.chunk.js.map",
+    "main.js": "/twobarrels/static/js/main.87335b06.chunk.js",
+    "main.js.map": "/twobarrels/static/js/main.87335b06.chunk.js.map",
     "runtime-main.js": "/twobarrels/static/js/runtime-main.500df80b.js",
     "runtime-main.js.map": "/twobarrels/static/js/runtime-main.500df80b.js.map",
-    "static/js/2.f2e1cda9.chunk.js": "/twobarrels/static/js/2.f2e1cda9.chunk.js",
-    "static/js/2.f2e1cda9.chunk.js.map": "/twobarrels/static/js/2.f2e1cda9.chunk.js.map",
+    "static/js/2.2475923a.chunk.js": "/twobarrels/static/js/2.2475923a.chunk.js",
+    "static/js/2.2475923a.chunk.js.map": "/twobarrels/static/js/2.2475923a.chunk.js.map",
     "index.html": "/twobarrels/index.html",
     "static/css/main.304fd802.chunk.css.map": "/twobarrels/static/css/main.304fd802.chunk.css.map",
-    "static/js/2.f2e1cda9.chunk.js.LICENSE.txt": "/twobarrels/static/js/2.f2e1cda9.chunk.js.LICENSE.txt",
+    "static/js/2.2475923a.chunk.js.LICENSE.txt": "/twobarrels/static/js/2.2475923a.chunk.js.LICENSE.txt",
     "static/media/2B-building-v5.510271c5.jpg": "/twobarrels/static/media/2B-building-v5.510271c5.jpg",
     "static/media/Footer.css": "/twobarrels/static/media/raptor.d5ccd52b.png"
   },
   "entrypoints": [
     "static/js/runtime-main.500df80b.js",
-    "static/js/2.f2e1cda9.chunk.js",
+    "static/js/2.2475923a.chunk.js",
     "static/css/main.304fd802.chunk.css",
-    "static/js/main.5b31ec4a.chunk.js"
+    "static/js/main.87335b06.chunk.js"
   ]
 }
