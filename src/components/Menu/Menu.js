@@ -94,7 +94,7 @@ const Menu = ({
 						return (
 							<li>
 								<Link
-									to={`/${option.link}`}
+									to={`#/${option.link}`}
 									onClick={() => hideMenu(option.link)}
 								>
 									<FontAwesomeIcon
@@ -134,7 +134,7 @@ const Menu = ({
 													}}
 												>
 													<Link
-														to={`/${menu.link}`}
+														to={`#/${menu.link}`}
 														onClick={() => hideMenu(menu.link)}
 													>
 														<FontAwesomeIcon

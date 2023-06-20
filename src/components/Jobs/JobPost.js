@@ -33,7 +33,7 @@ const JobPost = ({
 				</div>
 			</div>
 			{note && appWidth < 768 && <h5>{note}</h5>}
-			<Link to={`/jobs${route}`}>LEARN MORE</Link>
+			<Link to={`#/jobs${route}`}>LEARN MORE</Link>
 		</div>
 	);
 };

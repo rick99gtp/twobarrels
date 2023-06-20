@@ -121,7 +121,7 @@ const HowToGetAJobHere = () => {
 				</p>
 				<p>We’d like to be the solution you’ve been looking for.</p>
 				<h6>
-					<Link to="/jobs/apply-now">
+					<Link to="#/jobs/apply-now">
 						Apply Now
 						<FontAwesomeIcon className="btn-send-icon" icon={"chevron-right"} />
 					</Link>

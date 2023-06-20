@@ -67,7 +67,7 @@ const JobDetail = ({ jobTitle }) => {
 						return (
 							<li>
 								{benefit.route !== null ? (
-									<Link to={`${benefit.route}`}>{benefit.text}</Link>
+									<Link to={`#${benefit.route}`}>{benefit.text}</Link>
 								) : (
 									<p>{parse(benefit.text)}</p>
 								)}
