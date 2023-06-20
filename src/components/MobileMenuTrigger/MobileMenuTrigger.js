@@ -2,10 +2,10 @@ import "./MobileMenuTrigger.css";
 // import { GiHamburgerMenu } from 'react-icons/gi';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-const MobileMenuTrigger = ({ onChange }) => {
+const MobileMenuTrigger = ({ changeMenu }) => {
 	return (
 		<div className="mobile-menu-trigger">
-			<button onClick={() => onchange()} className="nav-trigger-btn">
+			<button onClick={changeMenu} className="nav-trigger-btn">
 				<FontAwesomeIcon
 					icon="bars"
 					style={{

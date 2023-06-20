@@ -27,7 +27,7 @@ const Header = ({
 				setJobSubMenusVisible={setJobSubMenusVisible}
 			/>
 			{appWidth < 768 ? (
-				<MobileMenuTrigger onchange={() => changeMenuOpen()} />
+				<MobileMenuTrigger changeMenu={() => changeMenuOpen()} />
 			) : null}
 
 			<ExitMobile menuOpen={menuOpen} changeMenuOpen={() => changeMenuOpen()} />
