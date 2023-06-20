@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/twobarrels/static/css/main.304fd802.chunk.css",
-    "main.js": "/twobarrels/static/js/main.87335b06.chunk.js",
-    "main.js.map": "/twobarrels/static/js/main.87335b06.chunk.js.map",
+    "main.js": "/twobarrels/static/js/main.eb94f20c.chunk.js",
+    "main.js.map": "/twobarrels/static/js/main.eb94f20c.chunk.js.map",
     "runtime-main.js": "/twobarrels/static/js/runtime-main.500df80b.js",
     "runtime-main.js.map": "/twobarrels/static/js/runtime-main.500df80b.js.map",
     "static/js/2.2475923a.chunk.js": "/twobarrels/static/js/2.2475923a.chunk.js",
@@ -17,6 +17,6 @@
     "static/js/runtime-main.500df80b.js",
     "static/js/2.2475923a.chunk.js",
     "static/css/main.304fd802.chunk.css",
-    "static/js/main.87335b06.chunk.js"
+    "static/js/main.eb94f20c.chunk.js"
   ]
 }
