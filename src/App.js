@@ -3,7 +3,7 @@ import Header from "./components/Header/Header";
 import Main from "./components/Main/Main";
 import Footer from "./components/Footer/Footer";
 import { useEffect, useState } from "react";
-import { BrowserRouter as Router } from "react-router-dom";
+import { HashRouter as Router } from "react-router-dom";
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { fab } from "@fortawesome/free-brands-svg-icons";
 import { fas } from "@fortawesome/free-solid-svg-icons";
@@ -51,7 +51,7 @@ function App() {
 
 	return (
 		<div className="App">
-			<Router>
+			<Router basename="/app">
 				<ScrollToTop />
 				<Header
 					activeMenu={activeMenu}
