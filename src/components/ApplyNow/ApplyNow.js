@@ -19,9 +19,6 @@ const ApplyNow = () => {
 					className="apply-form submittable-form"
 					method="post"
 					id="apply-form"
-					encType="multipart/form-data"
-					action="https://www.twobarrels.com/wp-content/themes/two-barrels/forms/apply/index.php"
-					noValidate=""
 				>
 					<div className="full-group half-group">
 						<div className="name-group">
