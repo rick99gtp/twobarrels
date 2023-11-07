@@ -1,71 +1,43 @@
-# Getting Started with Create React App
+# Two Barrels Website
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+https://user-images.githubusercontent.com/5834000/134794913-abec9501-9965-4ebe-9335-ac65ccfd3f08.mp4
 
-## Available Scripts
+# Project Description
 
-In the project directory, you can run:
+I created this project in 2021 to further my React knowledge using React 17, Firebase, useState/useEffect hooks and a Firestore database. I thought that this would be a fun project to create and that I could use this app to help new Javascript developers learn Javascript while playing the game.
 
-### `npm start`
+Now, after being employed as a React Software Engineer for an amazing company, I have revisited this project to apply a lot of what I have learned. One, was implementing React Redux to manage state.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+The game has 3 lifelines:
+* Ask the Audience - Each question records each answer the user selects to the database, so I can then use this data to create a bar graph representing the percentage of the audience that answered each question. It is then up to the user to choose the answer they believe is correct.
+* 50:50 - Selecting this lifeline RANDOMLY removes two of the four available answers, leaving the correct answer and one other.
+* Phone A Friend - This randomly chooses from a selection of 'friends' to help them with the question. Their answers aren't always correct. Depending on the difficulty of the question, their suggestion accuracy diminishes.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+# Technologies Used
 
-### `npm test`
+This project is created with:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+* React 17 - useState and useEffect Hooks.
+* Redux - Maintaining state globally in a store
+* Firebase - Firestore database CRUD operations.
+* HTML 5
+* CSS 3
+* Javascript
 
-### `npm run build`
+# Problems Faced
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+* Having never used Firebase/Firestorm before, I took it as a challenge. (I love learning new things!) Reading through the Firestorm docs and walking through the setup process on their website wasn't too difficult.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+* I had an issue with too many renderings when I implement the Timer component from App.js. Instead of counting down from 30 when the game starts and the question is revealed, it began immediately. I moved the logic to the Timer component and that helped tremendously.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+* I used SVG images for each question/answer. I ran into a problem where the SVGs wouldn't resize to fit the grid. I replaced the SVGs with simple borders/border-radius styles applied. I understand that the viewbox setting in the SVG might be the culprit. I'll have to learn more about using SVGs to understand how to implement something like this in the future.
 
-### `npm run eject`
+# What I learned
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+I learned that React is the library that was just made for me. I love it! Firestore databases are amazing. Coming from a SQL background, a noSQL database with documents wasn't as difficult as I thought it would be. Implementing React Redux to manage the state of the app was also not as difficult as I expected, either. At my current job, we used Flux, so it was easy to adapt and learn.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+# Takeaways
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+This was a really fun project to create. I finished working on this project September 26, 2021...late into the night. Deployed on Github Pages.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-# twobarrels
+Thanks for reading!
