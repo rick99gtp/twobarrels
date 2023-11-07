@@ -1,7 +1,6 @@
 import "./Menu.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Link } from "react-router-dom";
-import { useEffect } from "react";
 
 const Menu = ({
 	activeMenu,
@@ -82,17 +81,13 @@ const Menu = ({
 		},
 	];
 
-	useEffect(() => {
-		console.log("activeMenu:", activeMenu);
-	}, []);
-
 	return (
 		<div className={`menu ${menuOpen ? "show-mobile-nav" : ""}`}>
 			<nav className="nav">
 				<ul>
 					{menuOptions.map((option, index) => {
 						return (
-							<li>
+							<li key={index}>
 								<Link
 									to={`/${option.link}`}
 									onClick={() => hideMenu(option.link)}
@@ -123,9 +118,10 @@ const Menu = ({
 									className="sub-menu"
 								>
 									{option.submenus.length > 0 &&
-										option.submenus.map((menu) => {
+										option.submenus.map((menu, index) => {
 											return (
 												<li
+													key={index}
 													style={{
 														color: `${
 															activeMenu === menu.link ? "#003454" : ""

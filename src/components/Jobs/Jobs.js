@@ -16,7 +16,7 @@ const Jobs = ({ setJobSubMenusVisible, setActiveMenu, appWidth }) => {
 			"Software Engineering and Web Development Jobs in Spokane, WA";
 		setJobSubMenusVisible(true);
 		setActiveMenu("jobs");
-	}, []);
+	}, [setJobSubMenusVisible, setActiveMenu]);
 	return (
 		<div className="jobs__container">
 			<h1>Jobs</h1>
@@ -26,6 +26,7 @@ const Jobs = ({ setJobSubMenusVisible, setActiveMenu, appWidth }) => {
 				{JobList.map((job) => {
 					return (
 						<JobPost
+							key={job.id}
 							title={job.title}
 							location={job.location}
 							icon={job.icon}
@@ -46,11 +47,15 @@ const Jobs = ({ setJobSubMenusVisible, setActiveMenu, appWidth }) => {
 						{lookingForManagement.map((job, index) => {
 							return (
 								<li key={index}>
-									<p style={{ margin: 0 }}>
+									<div style={{ margin: 0 }}>
 										{job.title.map((title) => {
-											return <p style={{ margin: 0 }}>{title}</p>;
+											return (
+												<p key={title} style={{ margin: 0 }}>
+													{title}
+												</p>
+											);
 										})}
-									</p>
+									</div>
 									<span>{job.location}</span>
 								</li>
 							);
@@ -60,11 +65,15 @@ const Jobs = ({ setJobSubMenusVisible, setActiveMenu, appWidth }) => {
 						{lookingForSoftware.map((job, index) => {
 							return (
 								<li key={index}>
-									<p style={{ margin: 0 }}>
+									<div style={{ margin: 0 }}>
 										{job.title.map((title) => {
-											return <p style={{ margin: 0 }}>{title}</p>;
+											return (
+												<p key={title} style={{ margin: 0 }}>
+													{title}
+												</p>
+											);
 										})}
-									</p>
+									</div>
 									<span>{job.location}</span>
 								</li>
 							);
@@ -75,11 +84,15 @@ const Jobs = ({ setJobSubMenusVisible, setActiveMenu, appWidth }) => {
 						{lookingForSystems.map((job, index) => {
 							return (
 								<li key={index}>
-									<p style={{ margin: 0 }}>
+									<div style={{ margin: 0 }}>
 										{job.title.map((title) => {
-											return <p style={{ margin: 0 }}>{title}</p>;
+											return (
+												<p key={title} style={{ margin: 0 }}>
+													{title}
+												</p>
+											);
 										})}
-									</p>
+									</div>
 									<span>{job.location}</span>
 								</li>
 							);
@@ -89,11 +102,15 @@ const Jobs = ({ setJobSubMenusVisible, setActiveMenu, appWidth }) => {
 						{lookingForDigital.map((job, index) => {
 							return (
 								<li key={index}>
-									<p style={{ margin: 0 }}>
+									<div style={{ margin: 0 }}>
 										{job.title.map((title) => {
-											return <p style={{ margin: 0 }}>{title}</p>;
+											return (
+												<p key={title} style={{ margin: 0 }}>
+													{title}
+												</p>
+											);
 										})}
-									</p>
+									</div>
 									<span>{job.location}</span>
 								</li>
 							);

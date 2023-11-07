@@ -47,7 +47,7 @@
 	font-weight: 300;
 }
 
-blog__container .post-details span {
+.blog__container .post-details span {
 	color: #999;
 	font-size: 0.875rem;
 }
@@ -80,7 +80,7 @@ article {
 .blog__container article h2.post-title span {
 	font-weight: 400;
 	line-height: inherit;
-	font-size: 1.45rem;
+	font-size: 2.5rem;
 }
 
 @media print, screen and (min-width: 47.5em) {

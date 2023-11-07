@@ -37,6 +37,7 @@ const Icons = ({ appWidth, setActiveMenu }) => {
 			{tiles.map((tile, index) => {
 				return (
 					<Icon
+						key={tile.IconName}
 						icon={
 							<FontAwesomeIcon
 								icon={tile.IconName}

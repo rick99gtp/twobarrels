@@ -25,6 +25,11 @@
 	font-family: "Lato", sans-serif;
 }
 
+.want-to-work-here__container > a:hover svg {
+	margin-left: 1.5em;
+	transition: 0.25s ease;
+}
+
 .want-to-work-here__container a svg {
 	margin-left: 1em;
 }

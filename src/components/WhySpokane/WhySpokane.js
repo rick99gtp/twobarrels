@@ -41,7 +41,11 @@ const WhySpokane = () => {
 					<li>76 lakes within 50 minutes of downtown</li>
 					<li>
 						5 mountain resorts within 2 hours drive.{" "}
-						<a href="https://www.mtspokane.com/" target="_blank" rel="noopener">
+						<a
+							href="https://www.mtspokane.com/"
+							target="_blank"
+							rel="noopener noreferrer"
+						>
 							Mt Spokane
 						</a>{" "}
 						is 45 min from downtown and you can get a parking spot as late as
@@ -70,7 +74,7 @@ const WhySpokane = () => {
 					<a
 						href="https://spokanecentennialtrail.org/"
 						target="_blank"
-						rel="noopener"
+						rel="noopener noreferrer"
 					>
 						Centennial Trail
 					</a>
@@ -78,7 +82,7 @@ const WhySpokane = () => {
 					<a
 						href="https://www.bloomsdayrun.org/"
 						target="_blank"
-						rel="noopener"
+						rel="noopener noreferrer"
 					>
 						Bloomsday
 					</a>
@@ -87,7 +91,7 @@ const WhySpokane = () => {
 					<a
 						href="https://www.spokanehoopfest.net/"
 						target="_blank"
-						rel="noopener"
+						rel="noopener noreferrer"
 					>
 						Hoopfest
 					</a>
@@ -97,19 +101,27 @@ const WhySpokane = () => {
 					<a
 						href="https://parks.state.wa.us/573/Riverside"
 						target="_blank"
-						rel="noopener"
+						rel="noopener noreferrer"
 					>
 						Riverside State Park
 					</a>
 					. Skiers and snowboarders can get to Mt Spokane from downtown in under
 					an hour. Or if you want to drive a little further, we have plenty more
 					places to barrel down a mountain, like{" "}
-					<a href="https://www.ski49n.com/" target="_blank" rel="noopener">
+					<a
+						href="https://www.ski49n.com/"
+						target="_blank"
+						rel="noopener noreferrer"
+					>
 						49 Degrees North
 					</a>
 					, <a href="https://www.silvermt.com/">Silver Mountain</a>,{" "}
 					<a href="https://www.schweitzer.com/">Schweitzer</a> and{" "}
-					<a href="https://skilookout.com/" target="_blank" rel="noopener">
+					<a
+						href="https://skilookout.com/"
+						target="_blank"
+						rel="noopener noreferrer"
+					>
 						Lookout Pass
 					</a>
 					.
@@ -119,7 +131,7 @@ const WhySpokane = () => {
 					<a
 						href="https://my.spokanecity.org/riverfrontspokane/"
 						target="_blank"
-						rel="noopener"
+						rel="noopener noreferrer"
 					>
 						Riverfront Park
 					</a>
@@ -128,7 +140,7 @@ const WhySpokane = () => {
 					<a
 						href="http://www.georgeamphitheatre.com/"
 						target="_blank"
-						rel="noopener"
+						rel="noopener noreferrer"
 					>
 						Gorge Amphitheater
 					</a>{" "}
@@ -137,24 +149,36 @@ const WhySpokane = () => {
 				<h2>Sports fan?</h2>
 				<p>
 					We’ve got our very own minor league baseball team, the{" "}
-					<a href="https://www.milb.com/spokane" target="_blank" rel="noopener">
+					<a
+						href="https://www.milb.com/spokane"
+						target="_blank"
+						rel="noopener noreferrer"
+					>
 						Spokane Indians
 					</a>
 					—with surprisingly reasonably-priced concessions. And if you’ve never
 					seen arena football, you can check out the{" "}
-					<a href="https://thespokaneshock.com/" target="_blank" rel="noopener">
+					<a
+						href="https://thespokaneshock.com/"
+						target="_blank"
+						rel="noopener noreferrer"
+					>
 						Spokane Shock
 					</a>
 					. Since we’re a stone’s throw from Canada, it kind of makes sense our
 					city has a hockey fanbase too—we’re home to the{" "}
-					<a href="https://spokanechiefs.com/" target="_blank" rel="noopener">
+					<a
+						href="https://spokanechiefs.com/"
+						target="_blank"
+						rel="noopener noreferrer"
+					>
 						Spokane Chiefs
 					</a>
 					. However, our claim to sports fame is definitely the{" "}
 					<a
 						href="https://gozags.com/sports/mens-basketball"
 						target="_blank"
-						rel="noopener"
+						rel="noopener noreferrer"
 					>
 						Gonzaga men’s basketball
 					</a>{" "}
@@ -169,12 +193,16 @@ const WhySpokane = () => {
 					<a
 						href="https://mobiusdiscoverycenter.org/"
 						target="_blank"
-						rel="noopener"
+						rel="noopener noreferrer"
 					>
 						Mobius
 					</a>
 					, the{" "}
-					<a href="https://spokane.bluezoo.us/" target="_blank" rel="noopener">
+					<a
+						href="https://spokane.bluezoo.us/"
+						target="_blank"
+						rel="noopener noreferrer"
+					>
 						aquarium
 					</a>{" "}
 					or the trampoline parks. There’s also lots of Pinterest-friendly
@@ -195,7 +223,7 @@ const WhySpokane = () => {
 					<a
 						href="https://www.spokanezombiecrawl.com/"
 						target="_blank"
-						rel="noopener"
+						rel="noopener noreferrer"
 					>
 						Spokane Zombie Crawl
 					</a>
@@ -205,7 +233,7 @@ const WhySpokane = () => {
 					<a
 						href="https://www.lilaccitycon.com/"
 						target="_blank"
-						rel="noopener"
+						rel="noopener noreferrer"
 					>
 						Lilac City
 					</a>{" "}
@@ -219,7 +247,7 @@ const WhySpokane = () => {
 					<a
 						href="https://www.terrainspokane.com/"
 						target="_blank"
-						rel="noopener"
+						rel="noopener noreferrer"
 					>
 						Terrain
 					</a>{" "}
@@ -227,7 +255,7 @@ const WhySpokane = () => {
 					<a
 						href="https://downtownspokane.org/first-friday/"
 						target="_blank"
-						rel="noopener"
+						rel="noopener noreferrer"
 					>
 						First Fridays
 					</a>
@@ -235,7 +263,7 @@ const WhySpokane = () => {
 					<a
 						href="https://inside.ewu.edu/getlit/"
 						target="_blank"
-						rel="noopener"
+						rel="noopener noreferrer"
 					>
 						literary festival
 					</a>{" "}
@@ -243,14 +271,18 @@ const WhySpokane = () => {
 					<a
 						href="https://spokanefilmfestival.org/"
 						target="_blank"
-						rel="noopener"
+						rel="noopener noreferrer"
 					>
 						SpIFF
 					</a>
 					. Or if you’d rather make something of your own, you can gather a crew
 					and and make your own short film from start to finish with Spokane’s
 					annual{" "}
-					<a href="https://50hourslam.com/" target="_blank" rel="noopener">
+					<a
+						href="https://50hourslam.com/"
+						target="_blank"
+						rel="noopener noreferrer"
+					>
 						50 Hour Slam
 					</a>{" "}
 					competition.
@@ -260,13 +292,21 @@ const WhySpokane = () => {
 					Spokane may not be huge, but we have loads of restaurants. Little mom
 					and pop places. Places with rotating menus and locally-sourced
 					ingredients. Vegetarian restaurants, like{" "}
-					<a href="https://www.rutspokane.com/" target="_blank" rel="noopener">
+					<a
+						href="https://www.rutspokane.com/"
+						target="_blank"
+						rel="noopener noreferrer"
+					>
 						RÜT Bar &amp; Kitchen
 					</a>
 					. All kinds of international food, from Ethiopian cuisine to that
 					Jamaican food truck we’re always trying to flag down. And if you’re
 					the food festival type, you can sample a little bit of everything at{" "}
-					<a href="https://pigoutinthepark.com/" target="_blank" rel="noopener">
+					<a
+						href="https://pigoutinthepark.com/"
+						target="_blank"
+						rel="noopener noreferrer"
+					>
 						Pig Out in the Park
 					</a>{" "}
 					around Labor Day each year. We have many Michelin star rated
@@ -274,19 +314,23 @@ const WhySpokane = () => {
 					<a
 						href="https://www.facebook.com/dickshamburgers/"
 						target="_blank"
-						rel="noopener"
+						rel="noopener noreferrer"
 					>
 						Dicks Hamburgers
 					</a>{" "}
 					,&nbsp;{" "}
-					<a href="https://www.dlishs.com/" target="_blank" rel="noopener">
+					<a
+						href="https://www.dlishs.com/"
+						target="_blank"
+						rel="noopener noreferrer"
+					>
 						D Lish’s
 					</a>
 					,&nbsp;{" "}
 					<a
 						href="http://www.chicken-n-more.com/ChickenMo/"
 						target="_blank"
-						rel="noopener"
+						rel="noopener noreferrer"
 					>
 						Chicken-N-More
 					</a>
@@ -294,7 +338,7 @@ const WhySpokane = () => {
 					<a
 						href="https://thaibamboorestaurant.com/"
 						target="_blank"
-						rel="noopener"
+						rel="noopener noreferrer"
 					>
 						Thai Bamboo
 					</a>
@@ -311,7 +355,7 @@ const WhySpokane = () => {
 					<a
 						href="https://www.huckleberrysnaturalmarket.com/"
 						target="_blank"
-						rel="noopener"
+						rel="noopener noreferrer"
 					>
 						Huckleberries
 					</a>

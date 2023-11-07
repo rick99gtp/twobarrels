@@ -7,6 +7,7 @@ import {
 
 const jobList = [
 	{
+		id: "SeniorPHP",
 		title: "Senior PHP Developer",
 		priority: true,
 		location: "Remote | Spokane - Austin - SLC - ",
@@ -17,6 +18,7 @@ const jobList = [
 		route: "/software/senior-php-developer",
 	},
 	{
+		id: "SeniorSE",
 		title: "Senior Software Engineer (Ruby on Rails)",
 		priority: true,
 		location: "Remote | Spokane - Austin - SLC - ",
@@ -27,6 +29,7 @@ const jobList = [
 		route: "/software/senior-engineer",
 	},
 	{
+		id: "InfoSec",
 		title: "Information Security Director",
 		priority: true,
 		location: "Remote | Spokane - Austin - SLC - ",
@@ -37,6 +40,7 @@ const jobList = [
 		route: "/information-security-director",
 	},
 	{
+		id: "VOIP",
 		title: "VOIP Business Manager",
 		priority: true,
 		location: "Remote | Spokane - Austin - SLC - ",
@@ -47,6 +51,7 @@ const jobList = [
 		route: "/management/director-of-voip",
 	},
 	{
+		id: "PM",
 		title: "Product Manager",
 		priority: true,
 		location: "Remote | Spokane - Austin - SLC - ",
@@ -57,6 +62,7 @@ const jobList = [
 		route: "/software/product-manager",
 	},
 	{
+		id: "SeniorSoftEng",
 		title: "Senior Software Engineer - VoIP",
 		priority: false,
 		location: "Spokane, WA | Austin, TX | Sale Lake, UT - ",
@@ -67,6 +73,7 @@ const jobList = [
 		route: "/software/senior-software-engineer-voip",
 	},
 	{
+		id: "SeniorBackDev",
 		title: "Senior Backend Developer",
 		priority: false,
 		location: "Remote | Spokane - Austin - SLC - ",
@@ -77,6 +84,7 @@ const jobList = [
 		route: "/software/senior-backend-developer",
 	},
 	{
+		id: "SeniorDataEng",
 		title: "Senior Data Engineer",
 		priority: false,
 		location: "Remote | Spokane - Austin - SLC - ",
@@ -87,6 +95,7 @@ const jobList = [
 		route: "/software/senior-data-engineer",
 	},
 	{
+		id: "SecEng",
 		title: "Security Engineer",
 		priority: false,
 		location: "Remote | Spokane - Austin - SLC - ",
@@ -97,6 +106,7 @@ const jobList = [
 		route: "/systems/security-engineer",
 	},
 	{
+		id: "SeniorFrontEnd",
 		title: "Senior Front-End Web Developer",
 		priority: false,
 		location: "Remote | Spokane - Austin - SLC - ",
@@ -107,6 +117,7 @@ const jobList = [
 		route: "/websites/senior-front-web-developer",
 	},
 	{
+		id: "SeniorDevEng",
 		title: "Senior DevOps Engineer",
 		priority: false,
 		location: "Remote | Spokane - Austin - SLC - ",
@@ -117,6 +128,7 @@ const jobList = [
 		route: "/software/devops-engineers",
 	},
 	{
+		id: "DirectorSoftEng",
 		title: "Director of Software Engineering",
 		priority: false,
 		location: "Spokane WA, Austin TX, Salt Lake UT vicinity preferred - ",
@@ -127,6 +139,7 @@ const jobList = [
 		route: "/software/director-of-software-engineering",
 	},
 	{
+		id: "ChiefMarkOff",
 		title: "Chief Marketing Officer",
 		priority: false,
 		location: "Spokane - Austin - Salt Lake City - ",
@@ -137,6 +150,7 @@ const jobList = [
 		route: "/websites/chief-marketing-officer",
 	},
 	{
+		id: "JuniorGraphicDes",
 		title: "Junior Graphic Designer",
 		priority: false,
 		location: "Spokane, WA - ",

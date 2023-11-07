@@ -10,7 +10,7 @@ const JobDetail = ({ jobTitle }) => {
 
 	useEffect(() => {
 		document.title = jobDetailObj.title;
-	}, []);
+	}, [jobDetailObj.title]);
 	return (
 		<div className="outer-container">
 			<div className="job-detail-container">
@@ -65,7 +65,7 @@ const JobDetail = ({ jobTitle }) => {
 				<ul className="job-detail-benefits">
 					{benefits.map((benefit) => {
 						return (
-							<li>
+							<li key={benefit.text}>
 								{benefit.route !== null ? (
 									<Link to={`${benefit.route}`}>{benefit.text}</Link>
 								) : (
@@ -78,16 +78,21 @@ const JobDetail = ({ jobTitle }) => {
 
 				{/* Apply Now */}
 				<div style={{ textAlign: "center" }}>
-					<button
-						className="button primary-button g-recaptcha"
-						type="submit"
-						data-sitekey="6Le4lOUkAAAAAM7OEAJbuVuq4flvi7kvMlFhk-Ya"
-						data-callback="onSubmitRecaptcha"
-						data-action="apply"
-					>
-						Apply Now
-						<FontAwesomeIcon className="btn-send-icon" icon={"chevron-right"} />
-					</button>
+					<Link to={"/jobs/apply-now"}>
+						<button
+							className="button primary-button g-recaptcha"
+							type="submit"
+							data-sitekey="6Le4lOUkAAAAAM7OEAJbuVuq4flvi7kvMlFhk-Ya"
+							data-callback="onSubmitRecaptcha"
+							data-action="apply"
+						>
+							Apply Now
+							<FontAwesomeIcon
+								className="btn-send-icon"
+								icon={"chevron-right"}
+							/>
+						</button>
+					</Link>
 				</div>
 			</div>
 		</div>

@@ -45,10 +45,6 @@ function App() {
 		};
 	}, []);
 
-	useEffect(() => {
-		console.log(`job sub menus visible = ${jobSubMenusVisible}`);
-	}, [jobSubMenusVisible]);
-
 	return (
 		<div className="App">
 			<Router basename="/app">

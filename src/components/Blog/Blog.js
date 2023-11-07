@@ -20,7 +20,7 @@ const Blog = () => {
 				<h1 className="blog-h1">Latest Posts</h1>
 				{BlogItems.slice(page * 10, page * 10 + 10).map((item, index) => {
 					return (
-						<article>
+						<article key={item.title}>
 							<h2 className="post-title">
 								<Link to={`${item.link}`}>{parse(item.title)}</Link>
 							</h2>
@@ -52,6 +52,7 @@ const Blog = () => {
 						) : null}
 						{Array.from({ length: pageCount }, (_, i) => (
 							<div
+								key={i}
 								onClick={() => {
 									setPage(i);
 									window.scrollTo(0, 0);

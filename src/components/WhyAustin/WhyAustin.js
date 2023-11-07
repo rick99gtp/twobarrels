@@ -37,14 +37,18 @@ const WhyAustin = () => {
 				</p>
 				<p>
 					And all that is outside the revolving door of festivals like{" "}
-					<a href="https://www.sxsw.com/" target="_blank" rel="noopener">
+					<a
+						href="https://www.sxsw.com/"
+						target="_blank"
+						rel="noopener noreferrer"
+					>
 						SXSW
 					</a>{" "}
 					and{" "}
 					<a
 						href="https://austincitylimits.com/"
 						target="_blank"
-						rel="noopener"
+						rel="noopener noreferrer"
 					>
 						Austin City Limits
 					</a>{" "}
@@ -61,7 +65,7 @@ const WhyAustin = () => {
 					<a
 						href="https://youraustinmarathon.com/"
 						target="_blank"
-						rel="noopener"
+						rel="noopener noreferrer"
 					>
 						Austin Marathon
 					</a>
@@ -74,7 +78,7 @@ const WhyAustin = () => {
 					<a
 						href="https://austinparks.org/barton-creek-greenbelt/"
 						target="_blank"
-						rel="noopener"
+						rel="noopener noreferrer"
 					>
 						Barton Creek Greenbelt
 					</a>{" "}
@@ -94,7 +98,7 @@ const WhyAustin = () => {
 						<a
 							href="https://www.republicoftexasmotorcyclerally.com/"
 							target="_blank"
-							rel="noopener"
+							rel="noopener noreferrer"
 						>
 							Republic of Texas Motorcycle Rally
 						</a>
@@ -102,7 +106,11 @@ const WhyAustin = () => {
 					</li>
 					<li>
 						<strong>Bodypainting and drum circles? </strong>We celebrate{" "}
-						<a href="https://eeyores.org/" target="_blank" rel="noopener">
+						<a
+							href="https://eeyores.org/"
+							target="_blank"
+							rel="noopener noreferrer"
+						>
 							Eeyore’s birthday
 						</a>{" "}
 						(yep, the depressed donkey from Winnie the Pooh) with a music jam
@@ -111,7 +119,11 @@ const WhyAustin = () => {
 					<li>
 						<strong>Horror, action and sci-fi/fantasy flicks?</strong> Each fall
 						brings{" "}
-						<a href="https://fantasticfest.com/" target="_blank" rel="noopener">
+						<a
+							href="https://fantasticfest.com/"
+							target="_blank"
+							rel="noopener noreferrer"
+						>
 							Fantastic Fest
 						</a>
 						, a week of genre films, from shorts to premieres (John Wick and
@@ -128,7 +140,7 @@ const WhyAustin = () => {
 						<a
 							href="https://www.abckitefest.org/"
 							target="_blank"
-							rel="noopener"
+							rel="noopener noreferrer"
 						>
 							ABC Kite Fest
 						</a>
@@ -146,7 +158,7 @@ const WhyAustin = () => {
 					<a
 						href="https://www.niche.com/k12/search/best-school-districts/s/texas/"
 						target="_blank"
-						rel="noopener"
+						rel="noopener noreferrer"
 					>
 						ranked as the number one district
 					</a>{" "}
@@ -158,7 +170,7 @@ const WhyAustin = () => {
 					<a
 						href="https://www.austintexas.gov/department/austin-nature-science-center"
 						target="_blank"
-						rel="noopener"
+						rel="noopener noreferrer"
 					>
 						Austin Nature &amp; Science Center
 					</a>
@@ -166,7 +178,7 @@ const WhyAustin = () => {
 					<a
 						href="https://www.texasmusicmuseum.org/"
 						target="_blank"
-						rel="noopener"
+						rel="noopener noreferrer"
 					>
 						music museum
 					</a>
@@ -190,7 +202,7 @@ const WhyAustin = () => {
 					<a
 						href="https://rodeoaustin.com/events/bbq-austin/"
 						target="_blank"
-						rel="noopener"
+						rel="noopener noreferrer"
 					>
 						Rodeo Austin’s BBQ Cook Off
 					</a>{" "}
@@ -198,7 +210,7 @@ const WhyAustin = () => {
 					<a
 						href="https://www.austinchronicle.com/hot-sauce/"
 						target="_blank"
-						rel="noopener"
+						rel="noopener noreferrer"
 					>
 						Austin Chronicle Hot Sauce Festival
 					</a>
@@ -222,7 +234,7 @@ const WhyAustin = () => {
 					<a
 						href="http://www.roadwayevents.com/event/bat-fest/"
 						target="_blank"
-						rel="noopener"
+						rel="noopener noreferrer"
 					>
 						Bat Festival
 					</a>{" "}
@@ -236,7 +248,7 @@ const WhyAustin = () => {
 					<a
 						href="https://austin.com/visiting-the-cathedral-of-junk/"
 						target="_blank"
-						rel="noopener"
+						rel="noopener noreferrer"
 					>
 						junk cathedral
 					</a>
@@ -244,7 +256,7 @@ const WhyAustin = () => {
 					<a
 						href="https://mayfieldpark.org/mayfield-park-and-preserve-overview/"
 						target="_blank"
-						rel="noopener"
+						rel="noopener noreferrer"
 					>
 						the park with all the peacocks
 					</a>

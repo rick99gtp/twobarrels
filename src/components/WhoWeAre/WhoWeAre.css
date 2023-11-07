@@ -46,6 +46,7 @@
 .inner-div img {
 	transition: all 0.5s;
 	max-width: 100%;
+	width: 100%;
 	height: auto;
 	display: inline-block;
 }

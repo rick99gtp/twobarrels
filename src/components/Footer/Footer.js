@@ -36,7 +36,7 @@ const Footer = () => {
 									href="https://twitter.com/GiveEm2Barrels"
 									alt="Twitter"
 									title="Twitter"
-									rel="noopener"
+									rel="noopener noreferrer"
 									target="_blank"
 								>
 									<FontAwesomeIcon icon={["fab", "twitter-square"]} />
@@ -47,7 +47,7 @@ const Footer = () => {
 									href="https://www.facebook.com/Two-Barrels-LLC-139918443308930/"
 									alt="Facebook"
 									title="Facebook"
-									rel="noopener"
+									rel="noopener noreferrer"
 									target="_blank"
 								>
 									<FontAwesomeIcon icon={["fab", "facebook-square"]} />
@@ -58,7 +58,7 @@ const Footer = () => {
 									href="https://www.linkedin.com/company/two-barrels-llc/"
 									alt="LinkedIn"
 									title="LinkedIn"
-									rel="noopener"
+									rel="noopener noreferrer"
 									target="_blank"
 								>
 									<FontAwesomeIcon icon={["fab", "linkedin"]} />

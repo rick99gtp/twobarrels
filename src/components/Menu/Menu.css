@@ -62,7 +62,7 @@
 	font-weight: 400;
 }
 
-.menu nav ul li:hover {
+.menu nav ul li a:hover {
 	background-color: var(--menu-hover);
 	text-decoration: none;
 }

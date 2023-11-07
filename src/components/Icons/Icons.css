@@ -15,8 +15,29 @@
 	display: flex;
 	margin: 0 auto;
 	width: 55%;
+	max-width: 1000px;
 }
 
 .middle-tile {
 	margin: 0 25px;
+}
+
+@media screen and (min-width: 680px) {
+	.icon-flex {
+		flex-direction: column;
+		width: auto;
+	}
+
+	.middle-tile {
+		margin: 0;
+	}
+}
+
+@media screen and (min-width: 62.5em) {
+	.icon-flex {
+		flex-direction: row;
+	}
+	.middle-tile {
+		margin: 0 25px;
+	}
 }

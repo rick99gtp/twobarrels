@@ -18,7 +18,7 @@ const Benefits = () => {
 				<ul className="job-detail-benefits benefits-list">
 					{benefits.map((benefit) => {
 						return (
-							<li className="icon-list-item">
+							<li key={benefit.text} className="icon-list-item">
 								<FontAwesomeIcon icon={benefit.icon} />
 								{benefit.route !== null ? (
 									<p>

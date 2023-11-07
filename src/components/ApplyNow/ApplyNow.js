@@ -14,15 +14,7 @@ const ApplyNow = () => {
 					We are interested in every qualified candidate who is eligible to work
 					in the United States. However, we are not able to sponsor visas.
 				</p>
-				<form
-					data-parsley-validate=""
-					className="apply-form submittable-form"
-					method="post"
-					id="apply-form"
-					encType="multipart/form-data"
-					action="https://www.twobarrels.com/wp-content/themes/two-barrels/forms/apply/index.php"
-					noValidate=""
-				>
+				<form className="apply-form submittable-form" id="apply-form">
 					<div className="full-group half-group">
 						<div className="name-group">
 							<div className="group-half">
@@ -94,9 +86,7 @@ const ApplyNow = () => {
 						</div>
 						<div className="input-group first select">
 							<select required="" name="apply-state">
-								<option selected="" disabled="" value="">
-									Select State
-								</option>
+								<option defaultValue={""}>Select State</option>
 								<option value="AK">Alaska</option>
 								<option value="AL">Alabama</option>
 								<option value="AR">Arkansas</option>
@@ -174,7 +164,7 @@ const ApplyNow = () => {
 								name="position"
 								className="form-control"
 							>
-								<option disabled="" selected="" value="none">
+								<option disabled="" defaultValue={""} value="none">
 									Select a Position
 								</option>
 								<optgroup label="Management">
@@ -740,7 +730,10 @@ const ApplyNow = () => {
 						{/* <span className="remove-project">Remove Project</span> */}
 					</div>
 					<div className="add-project-button">
-						<a className="button small-button add-project"> Add Project</a>
+						<a href="/#" className="button small-button add-project">
+							{" "}
+							Add Project
+						</a>
 					</div>
 
 					<div className="full-group">
@@ -780,7 +773,7 @@ const ApplyNow = () => {
 								name="hear-about"
 								className="form-control"
 							>
-								<option disabled="" selected="" value="none"></option>
+								<option disabled="" defaultValue={""} value="none"></option>
 								<option value="Google">Google</option>
 								<option value="LinkedIn">LinkedIn</option>
 								<option value="BuiltIn">BuiltIn</option>
@@ -826,7 +819,7 @@ const ApplyNow = () => {
 							<label className="checkbox-radio">
 								I have read the{" "}
 								<a
-									rel="noopener"
+									rel="noopener noreferrer"
 									target="_blank"
 									href="https://www.twobarrels.com/jobs/how-to-get-a-job-here/"
 								>
@@ -848,7 +841,7 @@ const ApplyNow = () => {
 							<label className="checkbox-radio">
 								I have read the{" "}
 								<a
-									rel="noopener"
+									rel="noopener noreferrer"
 									target="_blank"
 									href="https://www.twobarrels.com/jobs/how-we-work/"
 								>
@@ -884,7 +877,7 @@ const ApplyNow = () => {
 										height="60"
 										role="presentation"
 										name="a-216llfk9q0ry"
-										frameborder="0"
+										frameBorder="0"
 										scrolling="no"
 										sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation allow-modals allow-popups-to-escape-sandbox"
 									></iframe>
@@ -905,7 +898,6 @@ const ApplyNow = () => {
 									}}
 								></textarea>
 							</div>
-							<iframe style={{ display: "none" }}></iframe>
 						</div>
 						<button
 							className="button primary-button g-recaptcha"
