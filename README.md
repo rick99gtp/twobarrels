@@ -26,14 +26,8 @@ This project is created with:
 
 * Github Pages has an issue with React Router and typing directly into the address bar. I have yet to circle back to address and resolve the issue.
 
-* 
+* I created this desktop-first...instead of what I normally do, which is mobile-first. This caused a few problems with styling for tablets and mobile.
 
 # What I learned
 
-I learned that React is the library that was just made for me. I love it! Firestore databases are amazing. Coming from a SQL background, a noSQL database with documents wasn't as difficult as I thought it would be. Implementing React Redux to manage the state of the app was also not as difficult as I expected, either. At my current job, we used Flux, so it was easy to adapt and learn.
-
-# Takeaways
-
-This was a really fun project to create. I finished working on this project September 26, 2021...late into the night. Deployed on Github Pages.
-
-Thanks for reading!
+It was really fun to create the Two Barrels website. It's always a challenge to try new things, but I really enjoy doing just that. I'm looking for my next challenging project to start!
