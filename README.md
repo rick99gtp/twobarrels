@@ -1,6 +1,11 @@
 # Two Barrels Website
 
-https://user-images.githubusercontent.com/5834000/134794913-abec9501-9965-4ebe-9335-ac65ccfd3f08.mp4
+Desktop
+https://github.com/rlnB2022/twobarrels/assets/5834000/c180f793-dc5f-40ec-86ab-cacd1e45ace9
+
+Mobile
+https://github.com/rlnB2022/twobarrels/assets/5834000/cf3d4e6f-8ea8-49c7-b0cd-a8798997a0b3
+
 
 # Project Description
 
