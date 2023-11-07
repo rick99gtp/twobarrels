@@ -14,7 +14,15 @@ const ApplyNow = () => {
 					We are interested in every qualified candidate who is eligible to work
 					in the United States. However, we are not able to sponsor visas.
 				</p>
-				<form className="apply-form submittable-form" id="apply-form">
+				<form
+					data-parsley-validate=""
+					className="apply-form submittable-form"
+					method="post"
+					id="apply-form"
+					encType="multipart/form-data"
+					action="https://www.twobarrels.com/wp-content/themes/two-barrels/forms/apply/index.php"
+					noValidate=""
+				>
 					<div className="full-group half-group">
 						<div className="name-group">
 							<div className="group-half">
