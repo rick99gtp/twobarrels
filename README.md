@@ -18,6 +18,7 @@ This project is created with:
 
 * React - useState and useEffect Hooks.
 * React Router - instead of anchor tags, using Link components provided by React Router.
+* useState and useEffect Hooks
 * HTML 5
 * CSS 3
 * Javascript
