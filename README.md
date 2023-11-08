@@ -16,7 +16,7 @@ This project uses 40 components, each with their own integrated stylesheet.
 
 This project is created with:
 
-* React 17 - useState and useEffect Hooks.
+* React - useState and useEffect Hooks.
 * React Router - instead of anchor tags, using Link components provided by React Router.
 * HTML 5
 * CSS 3
