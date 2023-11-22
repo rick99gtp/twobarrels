@@ -8,7 +8,7 @@ https://github.com/rlnB2022/twobarrels/assets/5834000/cf3d4e6f-8ea8-49c7-b0cd-a8
 
 # Project Description
 
-After discovering the Two Barrels website, besides being highly impressed with Two Barrels for their core values, ability to learn/try things out even if they fail and the way their website speaks to me, I wanted to show my enthusiasm and knowledge that I can do what is required for the job, even using a library like React. Using the skills that I have, I created this website using React and React Router.
+After discovering the Two Barrels website, besides being highly impressed with Two Barrels for their core values, ability to learn/try things out even if they fail and the way their website speaks to me, I wanted to show my enthusiasm and knowledge that I can do what is required for the job, even using a library like React. Using the skills that I have, I created a mockup of their website using React and React Router.
 
 This project uses 40 components, each with their own integrated stylesheet.
 
