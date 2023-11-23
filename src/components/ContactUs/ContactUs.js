@@ -60,7 +60,7 @@ const ContactUs = () => {
 			<div className="contactus__container">
 				<section className="contactus-row">
 					<h1>Contact Us</h1>
-					<form method="post">
+					<form>
 						<p>
 							Have a question? Wonder where we're located? You've come to the
 							right place. To get in touch with us fill out the form below:
