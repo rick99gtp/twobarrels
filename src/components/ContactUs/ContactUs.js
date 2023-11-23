@@ -60,47 +60,47 @@ const ContactUs = () => {
 			<div className="contactus__container">
 				<section className="contactus-row">
 					<h1>Contact Us</h1>
-					<form>
-						<p>
-							Have a question? Wonder where we're located? You've come to the
-							right place. To get in touch with us fill out the form below:
-						</p>
-						<div className="form-group">
-							<label htmlFor="name">Name</label>
-							<input
-								name="name"
-								type="text"
-								value={nameValue}
-								onChange={(e) => setNameValue(e.target.value)}
+					{/* <form> */}
+					<p>
+						Have a question? Wonder where we're located? You've come to the
+						right place. To get in touch with us fill out the form below:
+					</p>
+					<div className="form-group">
+						<label htmlFor="name">Name</label>
+						<input
+							name="name"
+							type="text"
+							value={nameValue}
+							onChange={(e) => setNameValue(e.target.value)}
+						/>
+					</div>
+					<div className="form-group">
+						<label htmlFor="email">Email Address</label>
+						<input
+							name="email"
+							type="text"
+							value={emailValue}
+							onChange={(e) => setEmailValue(e.target.value)}
+						/>
+					</div>
+					<div className="form-group">
+						<label htmlFor="message">Message</label>
+						<textarea
+							name="message"
+							value={messageValue}
+							onChange={(e) => setMessageValue(e.target.value)}
+						/>
+					</div>
+					<div className="btn-send">
+						<button className="">
+							Send Message
+							<FontAwesomeIcon
+								className="btn-send-icon"
+								icon={"chevron-right"}
 							/>
-						</div>
-						<div className="form-group">
-							<label htmlFor="email">Email Address</label>
-							<input
-								name="email"
-								type="text"
-								value={emailValue}
-								onChange={(e) => setEmailValue(e.target.value)}
-							/>
-						</div>
-						<div className="form-group">
-							<label htmlFor="message">Message</label>
-							<textarea
-								name="message"
-								value={messageValue}
-								onChange={(e) => setMessageValue(e.target.value)}
-							/>
-						</div>
-						<div className="btn-send">
-							<button className="">
-								Send Message
-								<FontAwesomeIcon
-									className="btn-send-icon"
-									icon={"chevron-right"}
-								/>
-							</button>
-						</div>
-					</form>
+						</button>
+					</div>
+					{/* </form> */}
 				</section>
 			</div>
 		</div>
