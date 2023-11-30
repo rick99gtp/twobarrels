@@ -2,7 +2,7 @@ const staff = {
 	personData: [
 		{
 			name: "Rick",
-			image: "https://www.rickbeyer.dev/images/hero1.jpg",
+			image: "https://www.rickbeyer.dev/images/me.jpg",
 		},
 		{
 			name: "Addie",
